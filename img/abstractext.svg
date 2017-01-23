@@ -1,0 +1,26 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1535.31 511.04"><defs><style>
+    
+      #Layer_1{
+                  stroke-dasharray: 500;
+                  stroke-dashoffset: 0;
+                  -webkit-animation: dash 5s ease-out both;
+                -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+              animation-delay: 4s;
+              
+                                          
+              }
+                                   
+              @-webkit-keyframes dash {
+                  from{
+                        opacity:0.5;
+                        fill-opacity: 0;
+                  }
+                  to {
+                        opacity:1;
+                        fill-opacity:1;
+                       
+                        
+                  }
+              }
+    
+    .cls-1{font-size:152px;fill:rgba( 28, 251, 195, 0.578 );stroke:none;stroke-miterlimit:10;stroke-width:3px;font-family:Jaapokkisubtract-Regular, Jaapokki subtract;}.cls-2{letter-spacing:-0.02em;}.cls-3{letter-spacing:0em;}.cls-4{letter-spacing:-0.02em;}.cls-5{letter-spacing:-0.01em;}.cls-6{letter-spacing:-0.07em;}</style></defs><title>abstractext</title><text class="cls-1" transform="translate(1.5 130.78)"><tspan class="cls-2">I</tspan><tspan class="cls-3" x="38" y="0">G</tspan><tspan class="cls-2" x="165.38" y="0">L</tspan><tspan x="243.05" y="0">ESIA </tspan><tspan class="cls-4" x="632.62" y="0">D</tspan><tspan x="732.63" y="0">E C</tspan><tspan class="cls-5" x="979.17" y="0">R</tspan><tspan x="1067.94" y="0">I</tspan><tspan class="cls-4" x="1108.98" y="0">S</tspan><tspan class="cls-6" x="1196.68" y="0">T</tspan><tspan x="1281.65" y="0">O</tspan></text></svg>

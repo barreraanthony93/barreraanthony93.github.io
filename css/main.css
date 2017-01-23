@@ -1,0 +1,139 @@
+.animation {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    margin-top: 100px;
+    
+}
+
+.imgAnimation{
+    
+    margin: 0px 15px auto;
+}
+#head, #subhead {
+   opacity: 0;
+    transition: all 1s;
+   
+}
+#head.fade-in, #subhead.fade-in {
+   opacity: 1;
+   
+}
+
+.absolute-animation{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#playBtn{
+    position: absolute;
+    height: 80px;
+    margin-top: 10px;
+    width: 100%;
+    z-index: 99;
+    opacity: 0;
+   
+}
+.doctitle{
+   
+}
+#restartBtn{
+    position: relative;
+       top:   168px;
+    height: 80px;
+    z-index: 99;
+}
+
+#nextBtn{
+    position: absolute;
+    right: 10%;
+    opacity: 0;
+}
+#previousBtn{
+    position: absolute;
+    right: 16%;
+    opacity: 0;
+}
+
+.pauseplayBtn {
+    position: relative;
+    margin-top: 35%;
+  
+    
+    
+}
+
+#cross {
+    
+   
+    
+}
+#equal, #equal2, #equal3{
+     font-size: 2000%;
+    color: black;
+    opacity: 0;
+    text-align: center;
+    transform: scale(0);
+    
+}
+
+#equal-small{
+    color: black;
+    text-align: center;
+}
+#bapt {    
+   
+}
+
+#grave {  
+
+}
+
+#rock {
+   
+ 
+}
+
+#baptIn {
+   
+
+}
+
+#resurec {
+  margin-top: 30px; 
+
+}
+#resurecGround {
+  position:absolute;
+    left:0px;
+
+}
+#resurecCloud {
+  position:absolute;
+    left:0px;
+    margin-top: -300px;
+
+}
+
+
+#baptOut {
+
+  
+}
+
+
+#growh2, #growp, #growbtn {
+    opacity: 0;
+}
+
+.smallAnimation .row{
+    margin-bottom: 30px;
+    
+}
+.smallAnimation #equal-small {
+    margin-top: 10%;
+}
+.smallAnimation #resurecCloud{
+    bottom:0px;
+}
