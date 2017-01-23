@@ -27,9 +27,9 @@
     position: fixed;
     width: 50px;
     height: 50px;
-    top: 0;
+    top: -100px;
     bottom: 0;
-    left:0;
+    left:-90px;
     right:0;
     margin: auto;
     
@@ -39,9 +39,9 @@
     width: 40vw;
     height: 40vw;
     display: block;
-    top:-30vh;
+    top:-50vh;
     left:-15vw;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 5px solid transparent;
     opacity: 1;
     box-sizing: border-box;
@@ -50,11 +50,12 @@
 .symbol {
     width: 6.5%;
     position: absolute;
-    top:35vh;
-    left:49vw;
+    top:30vh;
+    left:47vw;
     bottom: 0;
     right:0;
     opacity: 0;
+    z-index: 9;
 }
 
 .c1{
@@ -70,12 +71,10 @@
     width: 35vw;
     height: 35vw;
     display: block;
-    top:-26vh;
+    top:-27vh;
     left:-12.5vw;
-   border-bottom-color: black;
-    border-right-color: black;
-    border-left-color: black;
-    border-top-color: aquamarine;
+   border-right-color: white;
+    border-top-color: white;
     animation: rotate 3.5s alternate infinite;
     
 }
@@ -85,10 +84,8 @@
     display: block;
     top:-22.5vh;
     left:-10vw;
-    border-bottom-color: black;
-    border-right-color: black;
-    border-left-color: black;
-    border-top-color: aquamarine;
+     border-right-color: white;
+    border-top-color: white;
     animation: rotate 3s alternate infinite;
     
 }
@@ -98,10 +95,8 @@
     display: block;
     top:-19vh;
     left:-7.5vw;
-   border-bottom-color: black;
-    border-right-color: black;
-    border-left-color: black;
-    border-top-color: aquamarine;
+      border-right-color: white;
+    border-top-color: white;
     animation: rotate 2.5s alternate infinite;
     
 }
@@ -111,15 +106,13 @@
     display: block;
     top:-15vh;
     left:-5vw;
-  border-bottom-color: black;
-    border-right-color: black;
-    border-left-color: black;
-    border-top-color: aquamarine;
+    border-right-color: white;
+    border-top-color: white;
     animation: rotate 2s alternate infinite;
 }
 @keyframes rotate {
-    from{transform: rotate(0deg)}
-    to{transform: rotate(360deg)}
+    from{transform: rotate(0deg); opacity:0;}
+    to{transform: rotate(360deg);}
 }
 
 

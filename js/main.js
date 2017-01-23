@@ -13,14 +13,14 @@ var
 
 var CoverLoader = new TimelineMax()
 
-    .to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:5})
+    .to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:4.5})
     .to (symbol, 1, {opacity:1, ease:Power1.easeIn},"-=3")
-    .to (symbol, 1, {scale:4, ease:Power1.easeOut})
+    .to (symbol, 1, {scale:2, ease:Power1.easeOut})
     .to (symbol, .5, {opacity:0, ease:Power1.easeOut})
     .to (symbolMobile, 1, {opacity:1, ease:Power1.easeIn},"-=5")
     .to (symbolMobile, 1, {scale:6, ease:Power1.easeOut}, "-=1")
     .to (symbolMobile, .5, {opacity:0, ease:Power1.easeOut})
-    .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut})
+    .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=1')
     .to(rec2, 1, {x: "100%", ease:Power4.easeInOut},'-=1')
     .set(overlay, { zIndex: -99})
 
@@ -34,12 +34,13 @@ var CoverLoader = new TimelineMax()
         
     var servicesTl = new TimelineMax()
         .from(servHead, 1, {opacity: 0, y: -100})
-        .from(servIcon, 1, {y:100, opacity:0,  ease:Bounce.easeNone},.5,'-=1')
+        .from(servIcon, 1, {x:100, opacity:0,  ease:Bounce.easeNone},.5,'-=1')
         
     
      var sceneServ = new ScrollMagic.Scene({
         triggerElement: "#tabpanel",
-        triggerHook: .1
+        triggerHook: .1,
+         reverse: false,
     })
         .setTween(servicesTl)
         .addIndicators({name: "serv"})
@@ -67,18 +68,7 @@ var CoverLoader = new TimelineMax()
         .addIndicators({name: "header"}) 
         .addTo(controller);
 
-//Parallax
- 
 
-    var slideParallaxScene = new ScrollMagic.Scene({
-        triggerElement: "#parallax",
-        triggerHook: .7,
-        duration:'130%'
-    })
-    .setTween(TweenMax.from('.bcg-parallax', 1, {yPercent: -30, force3D:true, ease:Power0.easeNone}))
-    .addIndicators({name: "parallax"})
-    .addTo(controller);
-    
     //crecimineto
 
    var 
@@ -95,13 +85,13 @@ var CoverLoader = new TimelineMax()
 
         var scene2 = new ScrollMagic.Scene({
             triggerElement: "#triggerCrecimiento",
-            triggerHook: 0
+            reverse: false,
         })
         .setTween(creci)
         .addIndicators({name: "conectate"}) 
         .addTo(controller);
 
-/*
+
 //conenctate
     var
         team = $(".Team12"),
@@ -112,12 +102,13 @@ var CoverLoader = new TimelineMax()
     .staggerFrom(team2, 1, {x:1500},.5, "-.1")
     
     var sceneTeam = new ScrollMagic.Scene({
-        triggerElement: "#conectate"
+        triggerElement: "#conectate",
+        reverse: false,
     })
     .setTween(teamScene)
     .addIndicators({name:"team"})
     .addTo(controller);
-*/
+
 
 
 
