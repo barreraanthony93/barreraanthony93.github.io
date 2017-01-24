@@ -33,7 +33,7 @@
     }
     .Team1 img{
     width: 40%;
-    margin-left: 20vw;
+    margin-left: 25vw;
     
 }
     .img-responsive {
@@ -41,7 +41,7 @@
     }
     .Team1 img{
     width: 60%;
-    margin-left: 20vw;
+    margin-left: 25vw!important;
     
 }
 .teamh5 {
@@ -142,9 +142,33 @@
 }
     iframe{
       height: 550px;
+        width:100%;
         margin-bottom: -200px;
     }
+    .headbtn{
+  border: 2px solid black!important;
+  color: black!important;
+    border-radius: 10px;
+  background-color: transparent;
+        top:30vh!important;
 }
+    #about p{
+        font-size: 2vw!important;
+    }
+    .panel-body{
+        font-size: 2vw;
+    }
+    .visitor {
+        
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -798,6 +822,7 @@ a:focus {
     border-radius: 10px;
   background-color: transparent;
 }
+
 .btn-default:hover,
 .btn-default:focus {
   border: 1px solid aquamarine;
