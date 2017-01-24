@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1124px) {
+@media (min-width: 800px) and (max-width: 1124px) {
     .navbar-collapse.collapse {
         display: none !important;
     }
@@ -13,6 +13,19 @@
     }
     .navbar-brand {
         background-color: transparent!important;
+        top:-10px!important;
+        position: relative;
+    }
+    .navbar ul {
+        width: 100vw;
+        left:0px;
+        position: absolute;
+        
+    }
+     .navbar li {
+        width: 100vw;
+        left:0px;
+        
     }
 }
 
@@ -482,7 +495,7 @@ a:focus {
     width: 100%;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  background-color: aquamarine;
   outline: none;
 }
 .navbar-custom .nav li a:focus,
