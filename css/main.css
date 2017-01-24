@@ -10,7 +10,6 @@
     margin: 0px 0px auto;
 }
 #head, #subhead {
-   opacity: 0;
     transition: all 1s;
    
 }
@@ -31,7 +30,6 @@
     margin-top: 10px;
     width: 100%;
     z-index: 99;
-    opacity: 0;
    
 }
 .doctitle{
@@ -121,7 +119,7 @@
 
 
 #growh2, #growp, #growbtn {
-    opacity: 0;
+    
 }
 
 .smallAnimation .row{

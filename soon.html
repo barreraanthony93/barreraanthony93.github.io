@@ -54,24 +54,49 @@
 
 
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll socialmedia" href="index.html"><i class="fa fa-home animated"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
         <!-- /.container -->
     </nav>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg-out toggle "><i class="fa fa-bars" style="color:black;"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" style="background-color:aquamarine;"><i class="fa fa-times" ></i></a>
+                <li class="sidebar-brand">
+                    <a class="page-scroll" href="#top" onclick=$("#menu-close").click();><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>MENU</a>
+                </li>
+                <li>
+                    <a class="page-scroll socialmediahome" href="index.html" onclick=$("#menu-close").click();><i class="fa fa-home animated"></i></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="estudios.html" onclick=$("#menu-close").click();>Estudios</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="donate.html" onclick=$("#menu-close").click();>Ofrendar</a>
+                </li>
+                 <li>
+                    <a class="page-scroll" href="predicador.html" onclick=$("#menu-close").click();>Predicador</a>
+                </li>
+                 <li>
+                    <a class="page-scroll" href="eventos.html" onclick=$("#menu-close").click();>Eventos</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="himnos.html" onclick=$("#menu-close").click();>Himnos</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="members.html" onclick=$("#menu-close").click();>Miembros | Elgin</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contact.html" onclick=$("#menu-close").click();>Contacto</a>
+                </li>
+                <div class="socialTopInMenu">
 
+                    <li><a href="https://www.facebook.com/Iglesia-de-Cristo-en-Elgin-243271119073381/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/CristoElgin" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/TheCatch13777/featured" target="_blank" class="icoYoutube" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+                    <li><a href="https://www.instagram.com/cristoelgin/" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </div>
+            </ul>
+
+        </nav>
     <!-- Intro Header -->
     <header class="intro" id="intro">
         <div class="intro-body">
@@ -146,14 +171,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <script src="js/parallax.js"></script>
-    <script>
-        // Pretty simple huh?
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
-    </script>
-    <script>
-    </script>
-
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
     <script src="js/main.js"></script>

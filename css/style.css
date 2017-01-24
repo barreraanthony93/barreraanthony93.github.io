@@ -6,6 +6,15 @@
     z-index: 999;
     position: relative;
 }
+.coverHimno{
+    position: absolute;
+    height: 100%;
+    top:0px;
+    left: 5%;
+    width: 53vw;
+    z-index: 10;
+    background-color: rgba( 0, 0, 0, 0.8 );
+}
 .CoverSlides{
     position: absolute;
     width: 100vw;
@@ -18,7 +27,7 @@
     position: absolute;
     width: 50%;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: rgba( 0, 0, 0, 0.8 );
 }
 .rec2{
     right: 0px;
@@ -712,7 +721,6 @@ background-size: auto auto;
     color:black;
     background-color: aquamarine;
     border: none;
-     
     text-transform: uppercase;
     transition: all .5s;
 }

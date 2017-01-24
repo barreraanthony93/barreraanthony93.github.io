@@ -13,8 +13,8 @@ var
 
 var CoverLoader = new TimelineMax()
 
-    .to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:3.5})
-    .to (symbol, 1, {opacity:1, ease:Power1.easeIn},"-=2")
+    /*.to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:3.5})*/
+    .to (symbol, 2, {opacity:1, ease:Power1.easeIn})
     .to (symbol, 1, {scale:2, ease:Power1.easeOut})
     .to (symbol, .5, {opacity:0, ease:Power1.easeOut})
    /* .to (symbolMobile, 1, {opacity:1, ease:Power1.easeIn},"-=4")
@@ -23,6 +23,9 @@ var CoverLoader = new TimelineMax()
     .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=.5')
     .to(rec2, 1, {x: "100%", ease:Power4.easeInOut},'-=1')
     .set(overlay, { zIndex: -99})
+  
+
+
 
     
     //Services
@@ -55,9 +58,9 @@ var CoverLoader = new TimelineMax()
         play = $('#playBtn');
 
     var header = new TimelineMax()
-        .to(head, .5, {opacity: 1})
-        .to(subhead, .5, {opacity: 1}, '-=.5')
-        .to(play, .5, {opacity:1}, '-=.5')
+        .from(head, .5, {x:-1000})
+        .from(subhead, .5, {x:-1000}, '-=.5')
+        .from(play, .5, {x:1000}, '-=.5')
   
         var scene = new ScrollMagic.Scene({
             triggerElement: "#trigger1",
@@ -75,13 +78,14 @@ var CoverLoader = new TimelineMax()
    var 
         growh2 = $("#growh2"),
         growp = $("#growp"), 
-        growbtn = $("#growbtn"), 
-        grow = $("#grow img");
+        growbtn = $("#growbtn"),
+       brain = $(".headBrain");;
        
     var creci = new TimelineMax()
-        .to(growh2, 2, {opacity: 1})
-        .to(growp, 2, {opacity: 1}, '-=1')
-        .to(growbtn, 2, {opacity: 1}, '-=2')
+        .from(growh2, 1, {x:-1000})
+        .from(growp, 1, {x:-1000}, '-=.5')
+        .from(growbtn, 1, {x:1000}, '-=.5')
+        .from(brain, 1, {scale: 0, ease:Bounce.easeIn}, '-=.5')
 
         var scene2 = new ScrollMagic.Scene({
             triggerElement: "#triggerCrecimiento",
@@ -244,13 +248,17 @@ var CoverLoader = new TimelineMax()
         hsub = $(".intro-text"),
         btn = $(".btn-circle"),
         scenein = $(".sceneIn"),
+        menu = $("#menu-toggle"),
+        brandImg =$("#brand"),
         socialTop = $(".socialTop i")
     
     var SubpageInto = new TimelineMax()
     
-    .from(h1, 2, {x: 300, opacity: 0})
+    .from(h1, 2, {x: 300, opacity: 0, delay:2})
+    .from(brand, 2, {opacity: 0}, '-=1')
+    .from(menu, 2, {opacity: 0}, '-=2')
     .from(hsub, 2, {x: -300, opacity: 0})
-    .staggerFrom(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:4}, .5, '-=1')
+    .staggerFrom(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone}, .5)
     .from(btn, 1, {y: 10, opacity: 0, ease:Power0.easeNone}, '-=1.5')
    
    
