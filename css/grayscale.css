@@ -1,3 +1,23 @@
+@media (min-width: 768px) and (max-width: 1124px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+    .navbar-brand {
+        background-color: transparent!important;
+    }
+}
+
+
+
 @font-face {
     font-family: jaa;
     src: url(../vendor/font-awesome/fonts/subtract/web/jaapokkisubtract-regular.woff);
