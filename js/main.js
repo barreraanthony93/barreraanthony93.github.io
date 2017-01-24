@@ -4,6 +4,7 @@ var controller = new ScrollMagic.Controller();
 
 //CoverLoader
 var 
+    black = $(".blackback"),
     rec1 = $(".rec1"),   
     rec2 = $(".rec2"),
     spinner =$(".spinner"),
@@ -13,16 +14,13 @@ var
     overlay = $(".CoverSlides")
 
 var CoverLoader = new TimelineMax()
-
-    /*.to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:3.5})*/
-    .from(rec1, 3, {backgroundColor:"black"})
-    .from(rec2, 3, {backgroundColor:"black"})
-    .to (symbol, 2, {opacity:1, ease:Power1.easeIn})
+    .to(black, 2, {zIndex:-9999, position: "absolute", delay:.5})
+    .to (symbol, 1, {opacity:1, ease:Power1.easeIn})
     .to (symbol, 1, {scale:2, ease:Power1.easeOut})
     .to (symbol, .5, {opacity:0, ease:Power1.easeOut})
-   /* .to (symbolMobile, 1, {opacity:1, ease:Power1.easeIn},"-=4")
-    .to (symbolMobile, 1, {scale:6, ease:Power1.easeOut}, "-=1")
-    .to (symbolMobile, .5, {opacity:0, ease:Power1.easeOut})*/
+   .to (symbolMobile, 1, {opacity:1, ease:Power1.easeIn},"-=4")
+    .to (symbolMobile, 1, {scale:3, ease:Power1.easeOut}, "-=1")
+    .to (symbolMobile, .5, {opacity:0, ease:Power1.easeOut})
     .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=.5')
     .to(rec2, 1, {x: "100%", ease:Power4.easeInOut},'-=1')
     .set(overlay, { zIndex: -99})
@@ -258,11 +256,11 @@ var CoverLoader = new TimelineMax()
     var SubpageInto = new TimelineMax()
     
     .from(h1, 2, {x: 300, opacity: 0, delay:2})
-    .from(brand, 2, {opacity: 0}, '-=1')
+    .from(brand, 2, {opacity: 0, delay:2}, '-=1')
     .from(menu, 2, {opacity: 0}, '-=2')
     .from(hsub, 2, {x: -300, opacity: 0})
-    .staggerFrom(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone}, .5)
-    .to(btn, 1, {y: 10, opacity: 1, ease:Power0.easeNone}, '-=1.5')
+    .from(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:1})
+    .to(btn, 1, {y: 10, opacity: 1, ease:Power0.easeNone},'-=1')
    
    
     

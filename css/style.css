@@ -1,9 +1,16 @@
-
+.blackback{
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+}
 
 .WholeBody {
     height: 100vh;
     width: 100vw;
     z-index: 999;
+    background-color: white;
     position: relative;
 }
 .coverHimno{
@@ -530,7 +537,6 @@
 }
 
 .btn-circle{
-    opacity: 1;
     z-index: 9;
     position: relative;
 }

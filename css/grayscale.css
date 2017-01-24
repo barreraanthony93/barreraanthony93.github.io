@@ -22,7 +22,7 @@
     position: absolute;
     width: 50%;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: rgba(0,0,0,.95);
 }
 .rec2{
     right: 0px;
@@ -52,10 +52,10 @@
     
 }
 .symbolMobile {
-    width: 6%;
+    width: 20%;
     position: absolute;
-    top:46vh;
-    left:48vw;
+    top:30vh;
+    left:40vw;
     bottom: 0;
     right:0;
     opacity: 0;
