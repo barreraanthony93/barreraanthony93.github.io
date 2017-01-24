@@ -8,12 +8,15 @@ var
     rec2 = $(".rec2"),
     spinner =$(".spinner"),
     symbol = $(".symbol"),
+     symbolback = $(".symbolback"),
     symbolMobile = $(".symbolMobile"),
     overlay = $(".CoverSlides")
 
 var CoverLoader = new TimelineMax()
 
     /*.to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:3.5})*/
+    .from(rec1, 3, {backgroundColor:"black"})
+    .from(rec2, 3, {backgroundColor:"black"})
     .to (symbol, 2, {opacity:1, ease:Power1.easeIn})
     .to (symbol, 1, {scale:2, ease:Power1.easeOut})
     .to (symbol, .5, {opacity:0, ease:Power1.easeOut})
@@ -259,7 +262,7 @@ var CoverLoader = new TimelineMax()
     .from(menu, 2, {opacity: 0}, '-=2')
     .from(hsub, 2, {x: -300, opacity: 0})
     .staggerFrom(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone}, .5)
-    .from(btn, 1, {y: 10, opacity: 0, ease:Power0.easeNone}, '-=1.5')
+    .to(btn, 1, {y: 10, opacity: 1, ease:Power0.easeNone}, '-=1.5')
    
    
     

@@ -27,7 +27,7 @@
     position: absolute;
     width: 50%;
     height: 100vh;
-    background-color: rgba( 0, 0, 0, 0.8 );
+    background-color: rgba( 0, 0, 0, .8 );
 }
 .rec2{
     right: 0px;
@@ -55,6 +55,16 @@
     opacity: 1;
     box-sizing: border-box;
     
+}
+.symbolback {
+    opacity:0;
+    width: 6.5%;
+    position: absolute;
+    top:30vh;
+    left:47vw;
+    bottom: 0;
+    right:0;
+    opacity: 0;
 }
 .symbol {
     width: 6.5%;

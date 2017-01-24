@@ -362,6 +362,7 @@ a:hover {
     font-size: 40px;
     border-color: #222;
     background: 0 0;
+    opacity: 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out
