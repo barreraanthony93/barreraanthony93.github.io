@@ -3478,9 +3478,7 @@ input[type="button"].btn-block {
 .collapse {
   display: none;
 }
-.
-
-.in {
+.collapse.in {
   display: block;
 }
 tr.collapse.in {
