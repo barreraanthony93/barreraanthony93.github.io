@@ -357,7 +357,7 @@
     
 }
 
-.lead{ font-size: 4vw;}
+.lead{ font-size: 4vw; color:white;}
 
 
 
@@ -516,12 +516,15 @@ a:focus {
 }
 .intro .intro-body .brand-heading {
   font-size: 10vw;
+    font-family: jaa;
     color: white;
-    display: flex;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
     margin-left: -30px;
+}
+#contact h2{
+   font-family: jaa; 
 }
 @media (min-width: 768px) {
   .intro {
