@@ -138,6 +138,7 @@
 #salvacion {
     text-align: center;
     opacity: 0;
+    top: -5vh;
     
 }
 #salvacion h1{
@@ -145,10 +146,10 @@
     color:black;
 }
 #salvacion h2{
-    font-size: 3vw;
+    font-size: 5vh;
     color:black;
 }
 #salvacion small{
-    font-size: 2vw;
+    font-size: 4vh;
     color:#222;
 }
