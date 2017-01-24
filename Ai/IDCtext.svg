@@ -9,8 +9,8 @@
                   stroke-dasharray: 500;
                   stroke-dashoffset: 0;
                   -webkit-animation: dash 5s ease-out both;
-                -webkit-animation-delay: 7s; /* Safari 4.0 - 8.0 */
-              animation-delay: 7s;
+                -webkit-animation-delay: 6s; /* Safari 4.0 - 8.0 */
+              animation-delay: 6s;
               
                                           
               }

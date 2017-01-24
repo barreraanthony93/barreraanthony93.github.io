@@ -13,14 +13,14 @@ var
 
 var CoverLoader = new TimelineMax()
 
-    .to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:4.5})
-    .to (symbol, 1, {opacity:1, ease:Power1.easeIn},"-=3")
+    .to(spinner, 1, {opacity: 0, ease:Power4.easeOut, delay:3.5})
+    .to (symbol, 1, {opacity:1, ease:Power1.easeIn},"-=2")
     .to (symbol, 1, {scale:2, ease:Power1.easeOut})
     .to (symbol, .5, {opacity:0, ease:Power1.easeOut})
-    .to (symbolMobile, 1, {opacity:1, ease:Power1.easeIn},"-=5")
+   /* .to (symbolMobile, 1, {opacity:1, ease:Power1.easeIn},"-=4")
     .to (symbolMobile, 1, {scale:6, ease:Power1.easeOut}, "-=1")
-    .to (symbolMobile, .5, {opacity:0, ease:Power1.easeOut})
-    .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=1')
+    .to (symbolMobile, .5, {opacity:0, ease:Power1.easeOut})*/
+    .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=.5')
     .to(rec2, 1, {x: "100%", ease:Power4.easeInOut},'-=1')
     .set(overlay, { zIndex: -99})
 
@@ -92,15 +92,15 @@ var CoverLoader = new TimelineMax()
         .addTo(controller);
 
 
-/*
+
 //conenctate
     var
-        team = $(".Team12"),
-        team2 = $(".Team2")
+        team = $("#headConect h2"),
+        teamAll = $('#teamAll')
     
     var teamScene = new TimelineMax()
-        .staggerFrom(team, 1, {x:-1500, zIndex:9},.5)
-    .staggerFrom(team2, 1, {x:1500},.5, "-.1")
+        .from(team, 2, {opacity:0})
+        .from(teamAll, 2, {opacity:0, y:100})
     
     var sceneTeam = new ScrollMagic.Scene({
         triggerElement: "#conectate",
@@ -109,7 +109,7 @@ var CoverLoader = new TimelineMax()
     .setTween(teamScene)
     .addIndicators({name:"team"})
     .addTo(controller);
-*/
+
 
 
 
@@ -250,7 +250,7 @@ var CoverLoader = new TimelineMax()
     
     .from(h1, 2, {x: 300, opacity: 0})
     .from(hsub, 2, {x: -300, opacity: 0})
-    .staggerFrom(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:5}, .5, '-=1')
+    .staggerFrom(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:4}, .5, '-=1')
     .from(btn, 1, {y: 10, opacity: 0, ease:Power0.easeNone}, '-=1.5')
    
    
