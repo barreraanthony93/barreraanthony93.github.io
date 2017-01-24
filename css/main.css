@@ -2,13 +2,12 @@
     position: absolute;
     z-index: 0;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     
 }
 
 .imgAnimation{
-    
-    margin: 0px 15px auto;
+    margin: 0px 0px auto;
 }
 #head, #subhead {
    opacity: 0;
@@ -40,46 +39,41 @@
 }
 #restartBtn{
     position: relative;
-       top:   168px;
+       top: 10px;
     height: 80px;
     z-index: 99;
 }
 
-#nextBtn{
-    position: absolute;
-    right: 10%;
-    opacity: 0;
-}
-#previousBtn{
-    position: absolute;
-    right: 16%;
-    opacity: 0;
-}
-
-.pauseplayBtn {
-    position: relative;
-    margin-top: 35%;
-  
-    
-    
-}
-
 #cross {
+    left:100px;
+   top:-50px;
     
-   
-    
+}
+.crosstest {
+    top:32vh;
+    left: 10vw;
+    font-size: 5vw;
+    position: absolute;
+}
+
+.bapttest {
+    top:32vh;
+    left: 52vw;
+    font-size: 5vw;
+    position: absolute;
 }
 #equal, #equal2, #equal3{
      font-size: 2000%;
-    color: black;
+    color: white;
     opacity: 0;
+    top:100px;
     text-align: center;
     transform: scale(0);
     
 }
 
 #equal-small{
-    color: black;
+    color: white;
     text-align: center;
 }
 #bapt {    
@@ -87,11 +81,13 @@
 }
 
 #grave {  
-
+     left:100px;
 }
 
 #rock {
-   
+   left: 80px;
+    top:-70px;
+    width:40%;
  
 }
 
@@ -102,16 +98,17 @@
 
 #resurec {
   margin-top: 30px; 
+     left:100px;
 
 }
 #resurecGround {
   position:absolute;
-    left:0px;
+     left:100px;
 
 }
 #resurecCloud {
   position:absolute;
-    left:0px;
+    left:100px;
     margin-top: -300px;
 
 }
@@ -136,4 +133,22 @@
 }
 .smallAnimation #resurecCloud{
     bottom:0px;
+}
+
+#salvacion {
+    text-align: center;
+    opacity: 0;
+    
+}
+#salvacion h1{
+    font-size: 4vw;
+    color:black;
+}
+#salvacion h2{
+    font-size: 3vw;
+    color:black;
+}
+#salvacion small{
+    font-size: 2vw;
+    color:#222;
 }

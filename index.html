@@ -45,14 +45,14 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 
-    <header class="CoverSlides" style="width:100%; position:fixed;">
+<!--<header class="CoverSlides" style="width:100%; position:fixed;">
         <div class="Overlay">
             <div class="textCover">
                <div class="rec1"></div>
                <div class="rec2"></div>
                   <img class="symbol" src="../Ai/symbol2.svg" alt="">
                 <div class="spinner">
-                  <!-- <span class="inner c1"></span>-->
+                   <span class="inner c1"></span>
                    <span class="inner c2"></span>
                    <span class="inner c3"></span>
                    <span class="inner c4"></span>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>-->
     
     <div class="WholeBody">
         <div id="top"></div>
@@ -302,7 +302,7 @@
                     </div>
                     <div id="iconServices" class="col-lg-3 col-md-6 text-center">
                         <div class="service-box">
-                            <a href="#"> <i id="heart" class="fa text-primary sr-icons"><img style="width:17.5vh!important; margin-bottom: 15px;" src="Ai/heartIcon.svg" alt="" /></i>
+                            <a href="donate.html"> <i id="heart" class="fa text-primary sr-icons"><img style="width:17.5vh!important; margin-bottom: 15px;" src="Ai/heartIcon.svg" alt="" /></i>
                                 <h3 class="smallwhites">Donaciones</h3>
                                 <p class="text-muted">Ayuda a la expansion del evangelio de nuestro señor Jesus Cristo.</p>
                             </a>
@@ -320,19 +320,20 @@
         <section id="parallax">
             <div id="trigger1" class="download-section">
                 <div class=" doctitle col-xs-8 col-xs-offset-2">
-                    <h2 id="head" class="text-uppercase" style="color:black; font-size: 4vw;">El Evangelio<small style= "color:white;font-size: 1.5vw;"> Muerte | Sepultura | Resurrecion</small></h2>
+                    <h2 id="head" class="text-uppercase" style="color:black; font-size: 4vw;">El Evangelio<small style= "color:black;font-size: 1.5vw;"> Muerte | Sepultura | Resurrecion</small></h2>
                 </div>
                 <div class=" containBtn col-xs-6 col-xs-offset-3">
                     <button id="playBtn" style="background-color: aquamarine;" class="btn btn-default btn-lg">
                         <h2>|Play|</h2></button>
                 </div>
-                <button id="restartBtn" style="background-color: white;" class="btn btn-default btn-lg col-xs-6 col-xs-offset-3">Restart </button>
+                <button id="restartBtn" style="background-color: aquamarine;" class="btn btn-default btn-lg col-xs-2 col-xs-offset-9">|Reiniciar| </button>
             </div>
             <div class="container-fluid">
-                <div class="animation col-xs-12">
+                <div class="animation col-xs-11">
                     <div class="row absolute-animation">
                         <div>
-                            <img id="cross" class="col-xs-4 imgAnimation" src="img/animation/jesus-cross-white.png" alt="" />
+                            <img id="cross" class="col-xs-4 imgAnimation" src="img/animation/jesus-cross-color.png" alt="" />
+                            <h2 class="crosstest" id="cross1" style="left:250px;">Muerte</h2>
                         </div>
 
                         <div>
@@ -341,12 +342,15 @@
 
                         <div>
                             <img id="bapt" class="col-xs-4 imgAnimation" src="img/animation/baptismo.png" alt="" />
+                            <h2 class="bapttest" id="bapth1">Muerte al Pecado</h2>
                         </div>
 
                     </div>
                     <div class="row absolute-animation">
                         <div>
-                            <img id="grave" class="col-xs-4 imgAnimation" src="img/animation/jesus-grave.png" alt="" />
+                            <img id="grave" class="col-xs-4 imgAnimation" src="img/animation/jesus-grave-color.png" alt="" />
+                            <img src="img/animation/jesus-grave-rock-colo.png" alt="" id="rock" class="col-xs-4 imgAnimation absolute-animation">
+                            <h2 class="crosstest" id="cross2" style="opacity:0;">Sepultura</h2>
 
                         </div>
 
@@ -356,6 +360,7 @@
 
                         <div>
                             <img id="baptIn" class="col-xs-4 imgAnimation" src="img/animation/submerge2.png" alt="" />
+                            <h2 class="bapttest" id="bapth2">Sepultura en Agua</h2>
                         </div>
 
                     </div>
@@ -365,9 +370,10 @@
                         <div>
                             <div class="col-xs-4">
                                 <div>
-                                    <img id="resurec" class="imgAnimation col-xs-12" src="img/animation/jesusress.png" alt="" />
-                                    <img id="resurecGround" class="imgAnimation col-xs-12" src="img/animation/jesusress-ground.png" alt="" />
-                                    <img id="resurecCloud" class="imgAnimation col-xs-12" src="img/animation/cloud.png" alt="" />
+                                    <img id="resurec" class="imgAnimation col-xs-12" src="img/animation/jesusress-color.png" alt="" />
+                                    <img id="resurecGround" class="imgAnimation col-xs-12" src="img/animation/jesusress-ground-color.png" alt="" />
+                                    <img id="resurecCloud" class="imgAnimation col-xs-12" src="img/animation/cloud-color.png" alt="" />
+                                    <h2 class="crosstest" id="cross3">Resureccion</h2>
                                 </div>
                             </div>
                         </div>
@@ -377,81 +383,20 @@
                         </div>
 
                         <div>
-                            <img id="baptOut" class="col-xs-4 imgAnimation" src="img/animation/baptize.png" alt="" />
+                            <img id="baptOut" class="col-xs-4 imgAnimation" src="img/animation/baptize.png" alt="" style="width:40%; left:-5%;"/>
+                             <h2 class="bapttest" id="bapth3" style="left:55vw!important;">Nueva Vida</h2>
                         </div>
 
                     </div>
-                    <div class="pauseplayBtn">
-                        <button id="previousBtn" class="btn btn-default btn-lg">Pause </button>
-                        <button id="nextBtn" class="btn btn-default btn-lg">Play</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="visible-xs xs-screen">
-
-            <div class="download-section">
-                <div class=" doctitle col-xs-8 col-xs-offset-2">
-                    <h2 id="head" style="color:black!important;" class="smallwhite text-uppercase">El Evangelio</h2>
-                    <p id="subhead" class="smallwhite ">Muerte | Sepultura | Resurrecion</p>
-                </div>
-
-                <div class="container-fluid smallAnimation">
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div>
-                                <img id="cross" class="col-xs-5" src="img/animation/jesus-cross-white.png" alt="" />
-                                <h2>Muerte</h2>
-                            </div>
-
-                            <div>
-                                <h2 id="equal-small" class="col-xs-2">=</h2>
-                            </div>
-
-                            <div>
-                                <img id="bapt" class="col-xs-5" src="img/animation/baptismo.png" alt="" />
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div>
-                                <img id="grave" class="col-xs-5" src="img/animation/jesus-grave.png" alt="" />
-
-                            </div>
-
-                            <div>
-                                <h2 id="equal-small" class="col-xs-2">=</h2>
-                            </div>
-
-                            <div>
-                                <img id="baptIn" class="col-xs-5" src="img/animation/submerge2.png" alt="" />
-                            </div>
-
-                        </div>
-
-
-                        <div class="row">
-                            <div>
-                                <div class="col-xs-5">
-                                    <div>
-                                        <img id="resurec absolute-animation" class="col-xs-12" src="img/animation/jesusress.png" alt="" />
-                                        <img id="resurecGround absolute-animation" class="col-xs-12" src="img/animation/jesusress-ground.png" alt="" />
-                                        <img id="resurecCloud absolute-animation" class="col-xs-12" src="img/animation/cloud.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <h2 id="equal-small" class="col-xs-2">=</h2>
-                            </div>
-
-                            <div>
-                                <img id="baptOut" class="col-xs-5" src="img/animation/baptize.png" alt="" />
-                            </div>
-
-                        </div>
+                     <div class="row absolute-animation">
+                        <div class=" col-sm-8 col-sm-offset-2" id="salvacion">
+                           <h1>Plan de Salvacion</h1>
+                            <h2>Creer<small>Juan 8:24</small></h2>
+                            <h2>Arrenpentirse<small>Hechos 2:38</small></h2>
+                            <h2>Confesar<small>Mateo 10:32-33</small></h2>
+                            <h2>Bautizarse<small>Marcos 16:16</small></h2>
+                            <h2>Fidelidad<small>Apocalipsis 2:10</small></h2>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -473,14 +418,6 @@
                     <div>
                         <img class="headBrain hidden-xs" src="img/silhouettehead.png" alt="" />
                     </div>
-                    <!--<div class="row" id="grow">
-                   <img style="margin-top:0px;" class="bcg-crecimiento " src="Ai/growth/growth1.png" />
-                    <img style="margin-top:0px;" class="bcg-crecimiento " src="Ai/growth/growth2.png" />
-                    <img style="margin-top:0px;" class="bcg-crecimiento " src="Ai/growth/growth4.png" />
-                    <img style="margin-top: 0px;" class="bcg-crecimiento " src="Ai/growth/growth5.png" />
-                    <img style="margin-top: -5px; " class="bcg-crecimiento " src="Ai/growth/growth6.png" />
-                </div>-->
-
                 </div>
             </div>
         </section>

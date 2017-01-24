@@ -55,12 +55,13 @@ var CoverLoader = new TimelineMax()
         play = $('#playBtn');
 
     var header = new TimelineMax()
-        .to(head, 1, {opacity: 1})
-        .to(subhead, 1, {opacity: 1}, '-=.5')
-        .to(play, 1, {opacity:1}, '-=.5')
+        .to(head, .5, {opacity: 1})
+        .to(subhead, .5, {opacity: 1}, '-=.5')
+        .to(play, .5, {opacity:1}, '-=.5')
   
         var scene = new ScrollMagic.Scene({
             triggerElement: "#trigger1",
+            reverse:false,
             
            
         })
@@ -81,7 +82,6 @@ var CoverLoader = new TimelineMax()
         .to(growh2, 2, {opacity: 1})
         .to(growp, 2, {opacity: 1}, '-=1')
         .to(growbtn, 2, {opacity: 1}, '-=2')
-        .staggerFrom (grow, 1.5, {opacity: 0, x: -200, ease:Power4.easeOut},.4, '-=2')
 
         var scene2 = new ScrollMagic.Scene({
             triggerElement: "#triggerCrecimiento",
@@ -92,6 +92,7 @@ var CoverLoader = new TimelineMax()
         .addTo(controller);
 
 
+/*
 //conenctate
     var
         team = $(".Team12"),
@@ -108,6 +109,7 @@ var CoverLoader = new TimelineMax()
     .setTween(teamScene)
     .addIndicators({name:"team"})
     .addTo(controller);
+*/
 
 
 
@@ -123,6 +125,10 @@ var CoverLoader = new TimelineMax()
         
         var 
             cross = $('#cross'),
+            h2cross1 = $('#cross1'),
+            h2cross2 = $('#cross2'),
+            h2cross3 = $('#cross3'),
+            bapth1 = $('#bapth1'),bapth2 = $('#bapth2'),bapth3 = $('#bapth3'),
             equal = $('#equal'),
             bapt = $('#bapt'),
             rock = $('#rock'),
@@ -137,6 +143,7 @@ var CoverLoader = new TimelineMax()
             restart = $('#restartBtn'),
             pausebtn =$("#previousBtn"),
             playbtn =$("#nextBtn"),
+            salvacion =$('#salvacion'),
            
         tl = new TimelineLite();
         
@@ -147,41 +154,57 @@ var CoverLoader = new TimelineMax()
         .to(head, 1, {opacity: 0})
         .to(subhead, 1, {opacity: 0}, '-=1')
         .from(cross, 2, {x: 400, scale:0, delay: .5})
+        .from(h2cross1, 2, {opacity: 0}, '-=1')
         .to(equal, 2, {opacity: 1, scale:1})
         .from(bapt, 2, {x: -400, scale:0, opacity:0})
+        .from(bapth1, 2, {opacity: 0}, '-=1')
         .add('exit')
         .to(cross, 2, {autoAlpha: 0}, 'exit')
         .to(equal, 2, {autoAlpha: 0}, 'exit')
+        .to(h2cross1, 2, {opacity: 0}, 'exit')
        
         .from(grave, 2, { scale:0})
-         .to(equal2, 2, {opacity: 1, scale:1})
+        .from(rock, 2, {scale:0}, '-=2')
+        .to(rock, 2, {x: -60})
+        .to(h2cross2, 2, {opacity: 1, zIndex:9}, '-=1')
+        .to(equal2, 2, {opacity: 1, scale:1})
         .to(bapt, 2, {autoAlpha: 0})
+        .to(bapth1, 2, {opacity: 0}, '-=1')
         .from(baptIn, 2, {autoAlpha:0}, '-=2')
+        .from(bapth2, 2, {opacity: 0}, '-=1')
         .add('exit2')
         .to(grave, 2, {autoAlpha: 0}, 'exit2')
+        .to(rock, 2, {autoAlpha: 0}, 'exit2')
         .to(equal2, 2, {autoAlpha: 0}, 'exit2')
+        .to(h2cross2, 2, {opacity: 0}, 'exit2')
         
        
          .from(resurec, 2, { scale:0})
         .add('resurecIn')
         .from(resurecGround, 2, { scale:0}, '-=2')
         .from(resurecCloud, 2, { scale:0}, '-=2')
+        .from(h2cross3, 2, {opacity: 0}, '-=1')
+        .to(equal3, 2, {opacity: 1, scale:1},'-=1')
         .add('resurec')
         .to(resurec, 3, { opacity:0, y:-550}, 'resurec')
         .to(resurecGround, 2, {opacity:.2, y:50}, 'resurec')
         .to(resurecCloud, 2, {opacity:.2, y:50}, 'resurec')
-        .to(equal3, 2, {opacity: 1, scale:1})
+        
+        
         .to(baptIn, 2, {autoAlpha: 0})
         .from(baptOut, 2, {autoAlpha: 0}, '-=2')
+        .to(bapth2, 2, {opacity: 0}, '-=1')
+        .from(bapth3, 2, {opacity: 0}, '-=1')
         .add('exit3')
         .to(resurec, 2, {autoAlpha: 0}, 'exit3')
         .to(resurecGround, 2, {opacity: 0, y:50}, 'exit3')
         .to(resurecCloud, 2, {opacity:0 , y:50}, 'exit3')
         .to(equal3, 2, {autoAlpha: 0}, 'exit3')
         .to(baptOut, 2, {autoAlpha: 0}, 'exit3')
-        
-        .to(pausebtn, 1, {opacity:0}, 'exit3')
-        .to(playbtn, 1, {opacity:0}, 'exit3')
+        .to(h2cross3, 2, {opacity: 0}, 'exit3')
+        .to(bapth3, 2, {opacity: 0}, 'exit3')
+    
+        .to(salvacion, 2, {opacity:1} )
         .to(restart, 2, {autoAlpha: 1})
         
         
