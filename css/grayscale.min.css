@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: quantom;
-    src: url(/vendor/font-awesome/fonts/Quantum.ttf);
+    src: url(/font-awesome/fonts/Quantum.ttf);
 }
 @font-face {
     font-family: jaa;
-    src: url(/vendor/font-awesome/fonts/subtract/jaapokkisubtract-regular.ttf);
+    src: url(/font-awesome/fonts/subtract/jaapokkisubtract-regular.ttf);
 }
 /* Custom Button Styles */
 button:focus, button:active {
@@ -335,6 +335,7 @@ a:hover {
 .intro .intro-body .intro-text {
     font-size: 3vmin!important;
     color:black;
+    opacity: 1;
 
     
 }
@@ -362,7 +363,7 @@ a:hover {
     font-size: 40px;
     border-color: #222;
     background: 0 0;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out

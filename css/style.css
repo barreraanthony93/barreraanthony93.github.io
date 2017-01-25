@@ -658,11 +658,12 @@ background-size: auto auto;
 /*INFO PAGE*/
 .portfolio-item {
     background-color: white;
+    height: 450px!important;
 }
 .portfolio-item i{
     font-size: 4em!important;
     margin: 10px;
-    
+     font-size: 1vw;
 }
 
 .formscontain {
