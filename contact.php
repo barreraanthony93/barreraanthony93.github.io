@@ -1,3 +1,34 @@
+<?php
+if (empty($_POST) === false){
+$errors = array();
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+};
+
+if (empty($name) === true || empty($email) === true) {
+    $errors[] = 'Name, email and message are required!';
+
+} else {
+    
+    if (filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+    $errors[] = 'Please enter a valid email address';
+    }
+    
+    if (ctype_alpha($email, FILTER_VALIDATE_EMAIL) === false){
+    $errors[] = 'Name must only contain letters!';
+    }
+}
+
+if (empty($errors) === true) {
+    mail('barreraanthony93@yahoo.com', 'Contact form', $message, 'From: ' . $email);
+    header('Location: contact.php?sent');
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +56,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
 
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
@@ -35,6 +66,16 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+   <?php
+   if (empty($errors) === false) {
+        echo '<ul>';
+        foreach($errors as $error)   {
+            echo '<li>', $error, '</li>';
+        }
+         echo '</ul>';
+   }
+   ?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -131,17 +172,17 @@
     <br>
     <br>
     <br>
-
     <section class="bio">
         <div class="container">
             <hr class="featurette-divider">
             <!-- First Featurette -->
             <div class="container">
-                                    <form class="form-horizontal" role="form" action="index.php" method="post">
+                                    <form class="form-horizontal" role="form" action="" method="post">
                                         <fieldset class="col-lg-12">
                                             <legend class="text-center">
                                                 <h3 style="font-size:6vw;" >Informacion</h3></legend>
                                                 <hr>
+
                                             <!-- Name input-->
                                             <div class="row">
                                                 <div class="col-lg-6 formsgroup">
@@ -151,7 +192,7 @@
                                                                 <h2 class="whiteh2small">Nombre:</h2></label>
                                                         </div>
                                                         <div class=" col-xs-9">
-                                                            <input id="name" name="name" type="text" placeholder="Nombre" class="form-control">
+                                                            <input id="name" name="name" type="text" placeholder="Nombre" class="form-control" <?php if (isset($_POST['name']) === true) {echo 'value="',  strip_tags($_POST['name']), '"';} ?>>
                                                         </div>
                                                     </div>
 
@@ -162,7 +203,7 @@
                                                                 <h2 class="whiteh2small">E-mail:</h2></label>
                                                         </div>
                                                         <div class="col-xs-9">
-                                                            <input id="email" name="email" type="text" placeholder="E-mail" class="form-control">
+                                                            <input id="email" name="email" type="text" placeholder="E-mail" class="form-control" <?php if (isset($_POST['email']) === true) {echo 'value="',  strip_tags($_POST['email']), '"';} ?> >
                                                         </div>
                                                     </div>
 
@@ -173,14 +214,14 @@
                                                                 <h2 class="whiteh2small">Mensaje:</h2></label>
                                                         </div>
                                                         <div class="col-xs-9">
-                                                            <textarea class="form-control" id="message" name="message" placeholder="Mensaje para la Igleisa De Cristo en Elgin..." rows="5"></textarea>
+                                                            <textarea class="form-control" id="message" name="message" placeholder="Mensaje para la Igleisa De Cristo en Elgin..." rows="5" <?php if (isset($_POST['message']) === true) {echo strip_tags($_POST['message']);} ?>></textarea>
                                                         </div>
                                                     </div>
 
                                                     <!-- Form actions -->
                                                     <div class="form-group">
                                                         <div class="col-xs-12 col-md-12 text-right">
-                                                            <button type="submit" class="btn-default btn-secondary btn-lg" style="color:black; background-color:aquamarine;">Enviar</button>
+                                                            <button type="submit" value="Submit" class="btn-default btn-secondary btn-lg" style="color:black; background-color:aquamarine;">Enviar</button>
                                                         </div>
                                                     </div>
                                                 </div>
