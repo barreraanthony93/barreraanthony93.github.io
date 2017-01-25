@@ -658,7 +658,6 @@ background-size: auto auto;
 /*INFO PAGE*/
 .portfolio-item {
     background-color: white;
-    height: 450px!important;
 }
 .portfolio-item i{
     font-size: 4em!important;
@@ -1111,7 +1110,6 @@ button {
     color: white;
     margin: 0px;
     padding: 0px;
-    font-size: 1vw;
 }
 
 .white{

@@ -83,10 +83,10 @@ var CoverLoader = new TimelineMax()
        brain = $(".headBrain");;
        
     var creci = new TimelineMax()
-        .from(brain, 1, {scale: 0, ease:Bounce.easeIn}, '-=.5')
         .from(growh2, 1, {x:-1000})
         .from(growp, 1, {x:-1000}, '-=.5')
         .from(growbtn, 1, {x:1000}, '-=.5')
+        .from(brain, 1, {scale: 0, ease:Bounce.easeIn}, '-=.5')
 
         var scene2 = new ScrollMagic.Scene({
             triggerElement: "#triggerCrecimiento",
@@ -105,7 +105,7 @@ var CoverLoader = new TimelineMax()
     
     var teamScene = new TimelineMax()
         .from(team, 2, {opacity:0})
-        .from(teamAll, 2, {opacity:0, y:100}, "-=1")
+        .from(teamAll, 2, {opacity:0, y:100})
     
     var sceneTeam = new ScrollMagic.Scene({
         triggerElement: "#conectate",
@@ -250,15 +250,15 @@ var CoverLoader = new TimelineMax()
         btn = $(".btn-circle"),
         scenein = $(".sceneIn"),
         menu = $("#menu-toggle"),
-        brandImg =$(".navbar-brand"),
+        brandImg =$("#brand"),
         socialTop = $(".socialTop i")
     
     var SubpageInto = new TimelineMax()
     
     .from(h1, 2, {x: 300, opacity: 0, delay:2})
-    .from(brandImg, 2, {opacity: 0, delay:2}, '-=1')
+    .from(brand, 2, {opacity: 0, delay:2}, '-=1')
     .from(menu, 2, {opacity: 0}, '-=2')
-    .from(hsub, 2, {x: -300, opacity: 0},"-=3")
+    .from(hsub, 2, {x: -300, opacity: 0})
     .from(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:1})
     .to(btn, 1, {y: 10, opacity: 1, ease:Power0.easeNone},'-=1')
    
@@ -278,8 +278,7 @@ var CoverLoader = new TimelineMax()
        
     
     var scenetab = new ScrollMagic.Scene({
-        triggerElement: "#bio",
-        triggerHook: .5,
+        triggerElement: "#info"
         
     })
         .setTween(featureIn)
