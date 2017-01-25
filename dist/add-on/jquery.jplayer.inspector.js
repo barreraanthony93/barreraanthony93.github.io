@@ -119,7 +119,7 @@
 					+ '<p><a href="#" id="' + config.updateId + '">Update</a> jPlayer Inspector</p>'
 					+ '<div id="' + config.configId + '"></div>'
 				+ '</div>';
-			$(this)(structure);
+			$(this).html(structure);
 			
 			config.windowJq = $("#" + config.windowId);
 			config.statusJq = $("#" + config.statusId);
@@ -225,7 +225,7 @@
 			}
 			jPlayerInfo += "</p>";
 
-			if($(this).data("jPlayerInspector").jPlayer.data("jPlayer").active) {
+			if($(this).data("jPlayerInspector").jPlayer.data("jPlayer").html.active) {
 				if($(this).data("jPlayerInspector").jPlayer.data("jPlayer").flash.active) {
 					jPlayerInfo += "<strong>Problem with jPlayer since both HTML5 and Flash are active.</strong>";
 				} else {
@@ -264,11 +264,11 @@
 			jPlayerInfo += "</p>";
 
 			+ "<p>Raw browser test for HTML5 support. Should equal a function if HTML5 is available.<br />";
-			if($(this).data("jPlayerInspector").jPlayer.data("jPlayer").audio.available) {
-				jPlayerInfo += "<code>htmlElement.audio.canPlayType = " + (typeof $(this).data("jPlayerInspector").jPlayer.data("jPlayer")Element.audio.canPlayType) +"</code><br />"
+			if($(this).data("jPlayerInspector").jPlayer.data("jPlayer").html.audio.available) {
+				jPlayerInfo += "<code>htmlElement.audio.canPlayType = " + (typeof $(this).data("jPlayerInspector").jPlayer.data("jPlayer").htmlElement.audio.canPlayType) +"</code><br />"
 			}
-			if($(this).data("jPlayerInspector").jPlayer.data("jPlayer").video.available) {
-				jPlayerInfo += "<code>htmlElement.video.canPlayType = " + (typeof $(this).data("jPlayerInspector").jPlayer.data("jPlayer")Element.video.canPlayType) +"</code>";
+			if($(this).data("jPlayerInspector").jPlayer.data("jPlayer").html.video.available) {
+				jPlayerInfo += "<code>htmlElement.video.canPlayType = " + (typeof $(this).data("jPlayerInspector").jPlayer.data("jPlayer").htmlElement.video.canPlayType) +"</code>";
 			}
 			jPlayerInfo += "</p>";
 
@@ -309,11 +309,11 @@
 			+ "&nbsp;warningAlerts: " + $(this).data("jPlayerInspector").jPlayer.jPlayer("option", "warningAlerts") + "<br />"
 
 			+ "});</code></p>";
-			$(this).data("jPlayerInspector").configJq(jPlayerInfo);
+			$(this).data("jPlayerInspector").configJq.html(jPlayerInfo);
 			return this;
 		},
 		updateStatus: function() { // This displays information about jPlayer's status in the inspector
-			$(this).data("jPlayerInspector").statusJq(
+			$(this).data("jPlayerInspector").statusJq.html(
 				"<p>jPlayer is " +
 				($(this).data("jPlayerInspector").jPlayer.data("jPlayer").status.paused ? "paused" : "playing") +
 				" at time: " + Math.floor($(this).data("jPlayerInspector").jPlayer.data("jPlayer").status.currentTime*10)/10 + "s." +

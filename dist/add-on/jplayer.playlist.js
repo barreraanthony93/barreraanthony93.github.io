@@ -332,7 +332,7 @@
 			if(this.playlist.length && index !== undefined) {
 				$(this.cssSelector.playlist + " .jp-playlist-current").removeClass("jp-playlist-current");
 				$(this.cssSelector.playlist + " li:nth-child(" + (index + 1) + ")").addClass("jp-playlist-current").find(".jp-playlist-item").addClass("jp-playlist-current");
-				// $(this.cssSelector.details + " li")("<span class='jp-title'>" + this.playlist[index].title + "</span>" + (this.playlist[index].artist ? " <span class='jp-artist'>by " + this.playlist[index].artist + "</span>" : ""));
+				// $(this.cssSelector.details + " li").html("<span class='jp-title'>" + this.playlist[index].title + "</span>" + (this.playlist[index].artist ? " <span class='jp-artist'>by " + this.playlist[index].artist + "</span>" : ""));
 			}
 		},
 		setPlaylist: function(playlist) {
