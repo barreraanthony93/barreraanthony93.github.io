@@ -16,7 +16,7 @@
     position: absolute;
     width: 50%;
     height: 100vh;
-    background-color: #222;
+    background-color: black;
 }
 .rec2{
     right: 0px;
@@ -873,7 +873,7 @@ button {
     background-image: url(../img/rdn.jpg);
     background-repeat: no-repeat;
     background-size: 100vw auto;
-    width: 120vw;
+    width: 100vw;
     height: 50px;
     padding: 200px 0px 200px 0px; 
 }

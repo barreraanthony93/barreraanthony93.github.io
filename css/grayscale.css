@@ -198,7 +198,7 @@ body{
     position: absolute;
     width: 50%;
     height: 100vh;
-    background-color: rgba(0,0,0,.95);
+    background-color: rgba(0,0,0,1);
 }
 .rec2{
     right: 0px;
@@ -638,7 +638,7 @@ a:focus {
     width: 100%;
 }
 .navbar ul{
-    width: 95.5vw!important;
+    width: 100vw!important;
 }
 
 .navbar-custom .nav li a:hover {
