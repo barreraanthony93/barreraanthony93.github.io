@@ -11,7 +11,8 @@ var
     symbol = $(".symbol"),
      symbolback = $(".symbolback"),
     symbolMobile = $(".symbolMobile"),
-    overlay = $(".CoverSlides")
+    overlay = $(".CoverSlides"),
+    btn = $(".btn-circle")
 
 var CoverLoader = new TimelineMax()
     .to(black, 2, {zIndex:-9999, position: "absolute", delay:.5})
@@ -24,6 +25,7 @@ var CoverLoader = new TimelineMax()
     .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=1')
     .to(rec2, 1, {x: "100%", ease:Power4.easeInOut},'-=1')
     .set(overlay, { zIndex: -99})
+    .fromTo(btn, 1, {y: 10, opacity: 0, ease:Power0.easeNone},{y:0, opacity:1},'-=1')
   
 
 
@@ -256,12 +258,12 @@ var CoverLoader = new TimelineMax()
     
     var SubpageInto = new TimelineMax()
     
-    .from(h1, 2, {x: 300, opacity: 0, delay:2})
+    .from(h1, 2, {x: 300, opacity: 0, delay:4})
     .from(brandImg, 2, {opacity: 0, delay:2}, '-=1')
     .from(menu, 2, {opacity: 0}, '-=2')
-    .from(hsub, 2, {x: -300, opacity: 0},"-=2")
+    .from(hsub, 2, {x: -300, opacity: 0},"-=3")
     .from(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:1})
-    .to(btn, 1, {y: 10, opacity: 1, ease:Power0.easeNone},'-=1')
+    .fromTo(btn, 1, {y: 10, opacity: 0, ease:Power0.easeNone},{y:0, opacity:1},'-=3')
    
    
     
