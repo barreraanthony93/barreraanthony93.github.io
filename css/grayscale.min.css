@@ -120,8 +120,22 @@ hr.small {
     z-index: 9999;
     position: fixed;
     top: 0;
-    background-color:aquamarine!important;
+    border-radius: 5px!important;
+    background-color:rgba( 0, 0, 0, 0.617 )!important;
+    border: solid black 1px;
     right: 0;
+}
+#menu-toggle:hover {
+    background-color:transparent!important;
+    border: solid white 1px;
+ 
+}
+.fa-bars {
+    color:aquamarine!important;
+    transition: .5s;
+}
+#menu-toggle:hover .fa-bars {
+    color:white!important;
 }
 
 #sidebar-wrapper.active {
@@ -373,7 +387,7 @@ a:hover {
 .btn-circle:hover {
     outline: 0;
     color: #fff;
-    background: rgba(255, 255, 255, .1)
+    background: rgba(0, 0, 0, .7)
 }
 
 .btn-circle i.animated {

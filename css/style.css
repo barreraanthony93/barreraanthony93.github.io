@@ -15,10 +15,10 @@
 }
 .coverHimno{
     position: absolute;
-    height: 100%;
-    top:0px;
-    left: 5%;
-    width: 53vw;
+    height: 550px;
+    margin-top: -6%;
+    left: 0vw;
+    width: 100vw;
     z-index: 10;
     background-color: rgba( 0, 0, 0, 0.8 );
 }
@@ -727,9 +727,8 @@ background-size: auto auto;
     transform: scale(1.4);
     position: fixed;
     color:black;
-    background-color: aquamarine;
+    background-color:aquamarine;
     border: none;
-     
     text-transform: uppercase;
     transition: all .5s;
 }
@@ -744,30 +743,6 @@ background-size: auto auto;
     transition: all .5s;
 }
 
-
-.information {
-    position: fixed;
-    bottom:30px;
-    left: 30px;
-    background-color: transparent;
-    border: solid transparent 0px;
-    z-index: 9;
-}
-
-.information i{
-   font-size: 4em;
-}
-
-.information i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear
-}
 iframe {
     width: 100%;
     border-radius: 20px;
