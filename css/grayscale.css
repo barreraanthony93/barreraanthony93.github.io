@@ -637,6 +637,10 @@ a:focus {
     text-align: center;
     width: 100%;
 }
+.navbar ul{
+    width: 95.5vw!important;
+}
+
 .navbar-custom .nav li a:hover {
   background-color: aquamarine;
   outline: none;
