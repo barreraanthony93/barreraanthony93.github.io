@@ -15,13 +15,13 @@ var
 
 var CoverLoader = new TimelineMax()
     .to(black, 2, {zIndex:-9999, position: "absolute", delay:.5})
-    .to (symbol, 1, {opacity:1, ease:Power1.easeIn})
+    .to (symbol, 1, {opacity:1, ease:Power1.easeIn},'-=.5')
     .to (symbol, 1, {scale:2, ease:Power1.easeOut})
     .to (symbol, .5, {opacity:0, ease:Power1.easeOut})
    .to (symbolMobile, 1, {opacity:1, ease:Power1.easeIn},"-=3")
     .to (symbolMobile, 1, {scale:1.5, ease:Power1.easeOut}, "-=1")
     .to (symbolMobile, .5, {opacity:0, ease:Power1.easeOut})
-    .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=.5')
+    .to(rec1, 1, {x: "-100%", ease:Power4.easeInOut},'-=1')
     .to(rec2, 1, {x: "100%", ease:Power4.easeInOut},'-=1')
     .set(overlay, { zIndex: -99})
   
@@ -84,9 +84,9 @@ var CoverLoader = new TimelineMax()
        
     var creci = new TimelineMax()
     .from(brain, 1, {scale: 0, ease:Bounce.easeIn}, '-=.5')
-        .from(growh2, 1, {x:-1000})
-        .from(growp, 1, {x:-1000}, '-=.5')
-        .from(growbtn, 1, {x:1000}, '-=.5')
+        .from(growh2, 1, {x:-1500})
+        .from(growp, 1, {x:-1500}, '-=.5')
+        .from(growbtn, 1, {x:1500}, '-=.5')
         
 
         var scene2 = new ScrollMagic.Scene({
@@ -259,7 +259,7 @@ var CoverLoader = new TimelineMax()
     .from(h1, 2, {x: 300, opacity: 0, delay:2})
     .from(brandImg, 2, {opacity: 0, delay:2}, '-=1')
     .from(menu, 2, {opacity: 0}, '-=2')
-    .from(hsub, 2, {x: -300, opacity: 0},"-=3")
+    .from(hsub, 2, {x: -300, opacity: 0},"-=2")
     .from(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:1})
     .to(btn, 1, {y: 10, opacity: 1, ease:Power0.easeNone},'-=1')
    
