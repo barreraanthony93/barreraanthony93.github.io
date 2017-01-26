@@ -39,108 +39,19 @@
 .rec2{
     right: 0px;
 }
-.spinner {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    top: -100px;
-    bottom: 0;
-    left:-90px;
-    right:0;
-    margin: auto;
-    
-}
-.inner {
-    position: absolute;
-    width: 40vw;
-    height: 40vw;
-    display: block;
-    top:-50vh;
-    left:-15vw;
-    border-radius: 50%;
-    border: 5px solid transparent;
-    opacity: 1;
-    box-sizing: border-box;
-    
-}
-.symbolback {
-    opacity:0;
-    width: 6.5%;
-    position: absolute;
-    top:30vh;
-    left:47vw;
-    bottom: 0;
-    right:0;
-    opacity: 0;
-}
+
+
+
 .symbol {
     width: 6.5%;
     position: absolute;
     top:30vh;
-    left:47vw;
+    left:46vw;
     bottom: 0;
     right:0;
     opacity: 0;
     z-index: 9;
 }
-
-.c1{
-    
-    border-bottom-color: black;
-    border-right-color: black;
-    border-left-color: black;
-    border-top-color: aquamarine;
-    animation: rotate 4s alternate infinite;
-    
-}
-.c2{
-    width: 35vw;
-    height: 35vw;
-    display: block;
-    top:-27vh;
-    left:-12.5vw;
-   border-right-color: white;
-    border-top-color: white;
-    animation: rotate 3.5s alternate infinite;
-    
-}
-.c3{
-    width: 30vw;
-    height: 30vw;
-    display: block;
-    top:-22.5vh;
-    left:-10vw;
-     border-right-color: white;
-    border-top-color: white;
-    animation: rotate 3s alternate infinite;
-    
-}
-.c4{
-    width: 25vw;
-    height: 25vw;
-    display: block;
-    top:-19vh;
-    left:-7.5vw;
-      border-right-color: white;
-    border-top-color: white;
-    animation: rotate 2.5s alternate infinite;
-    
-}
-.c5{
-    width: 20vw;
-    height: 20vw;
-    display: block;
-    top:-15vh;
-    left:-5vw;
-    border-right-color: white;
-    border-top-color: white;
-    animation: rotate 2s alternate infinite;
-}
-@keyframes rotate {
-    from{transform: rotate(0deg); opacity:0;}
-    to{transform: rotate(360deg);}
-}
-
 
 .Overlay{
     opacity: 1;
@@ -160,10 +71,6 @@
     z-index: 1;
     position: absolute;
    
-}
-
-.Overlay.off{
-  opacity: 0;
 }
 
 #services{
@@ -328,7 +235,7 @@
 }
 
 .socialTop {
-    left: 35vw; 
+    left: 34vw; 
     font-size: 70px;
     top:40vh;
    position: fixed;
