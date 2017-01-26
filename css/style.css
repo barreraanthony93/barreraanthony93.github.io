@@ -661,7 +661,7 @@ iframe {
 }
 .framecover {
     position: relative;
-    height: 33vh;
+    height: 300px;
     width: 98%;
     background-image: url(../img/mapbanner.png);
     background-position: 0px 60%;
