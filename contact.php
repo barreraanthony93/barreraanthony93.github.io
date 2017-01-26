@@ -41,7 +41,7 @@ if (empty($errors) === true) {
     <meta name="author" content="">
 
     <title>Iglesia de Cristo Elgin | Predicador</title>
-
+    <link rel="icon" type="image/png" sizes="32x32" href="img/FaviconIDC.png">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
