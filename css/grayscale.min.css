@@ -78,15 +78,15 @@ hr.small {
 .sidebar-nav li {
     text-indent: 10px;
     line-height: 50px;
+    height: 6vh;
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
     color: #999;
-    
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
   
 }
 
