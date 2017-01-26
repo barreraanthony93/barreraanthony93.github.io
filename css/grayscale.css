@@ -37,9 +37,9 @@
     margin-left: 25vw;
     
 }
-    .img-responsive {
-        max-width: 50%!important;
-    }
+  /*  .img-responsive2 {
+        max-width: 500px!important;
+    }*/
     .Team1 img{
     width: 60%;
     margin-left: 25vw!important;
@@ -166,17 +166,53 @@
         font-size: 2vw!important;
         width: auto;
     }
- 
+    .thumbnail p {
+        font-size: 3vw;
+        text-align: center;
+    }
+    .imgBanner{
+    width: 98vw!important;
+    height: 50px;
+    padding: 200px 0px 200px 0px; 
+}
+    .img-responsive2{
+    height: 350px!important;
+    width: 550px!important;
+}
+ .innerImg {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    left: 0px;
+    padding: 10px !important;
+    margin: 60px !important;
+    background-color: rgba( 0, 0, 0, 0.708 );
+    border-radius: 10px;
+}
 }
 
 
+.innerImg {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    left: 0px;
+    padding: 10px;
+    padding-top: 5%;
+    margin: 20px;
+    background-color: rgba( 0, 0, 0, 0.6 );
+    border-radius: 10px;
+}
+.img-responsive2{
+     width: 500px;
+    
+}
 
-
-
-
-
-
-
+.smaller {
+    font-size: 4vw!important;
+}
 
 
 
