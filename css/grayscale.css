@@ -96,7 +96,7 @@
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 60vh!important;
+    top: 35vh!important;
     left: 0vw;
     opacity: 0;
    visibility: hidden;
@@ -126,7 +126,7 @@
     background:#f8f8f8;
     left:52%;
     z-index: -10;
-    margin-left:-8%!important;
+    margin-left:-3%!important;
     background-color: black;
     -moz-transform:rotate(-135deg);
     -webkit-transform:rotate(-135deg);
@@ -151,7 +151,7 @@
   color: black!important;
     border-radius: 10px;
   background-color: transparent;
-        top:0vh!important;
+        top:5vh!important;
 }
     #about p{
         font-size: 2vw!important;
