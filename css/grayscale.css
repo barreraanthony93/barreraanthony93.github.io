@@ -880,7 +880,7 @@ a:focus {
 .btn-default:focus {
   border: 1px solid aquamarine;
   outline: none;
-  color: black;
+  color: white;
   background-color: #42DCA3;
 }
 ul.banner-social-buttons {
