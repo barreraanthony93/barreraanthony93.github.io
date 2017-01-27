@@ -23,11 +23,10 @@ if (empty($name) === true || empty($email) === true) {
 
 if (empty($errors) === true) {
     mail('barreraanthony93@yahoo.com', 'Contact form', $message, 'From: ' . $email);
-    header('Location: thankyou.html?sent');
+    header('Location: thankyoumobile.html?sent');
     exit();
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -480,6 +479,7 @@ if (empty($errors) === true) {
         </div>
     </footer>
     </div>
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
