@@ -5,6 +5,24 @@
     background-color: black;
     z-index: 9999;
 }
+.videoLatest {
+    height: 500px;
+}
+.videoiframe{
+}
+.background {
+    height: 400px;
+    width: 150%;
+    left: -10vw;
+    margin-top:-30px;
+    background-image: url(../img/visitback.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% auto;
+    
+}
 
 .WholeBody {
     height: 100vh;
@@ -79,6 +97,38 @@
     padding-bottom: 150px;
     z-index: 9;
 }
+.service-box h3, .service-box p{
+    color:aquamarine;
+    background-color: rgba( 0, 0, 0, 0.6 );
+    border-radius: 8px;
+}
+.service-box p{
+    height: 100px;
+    padding: 10px;
+    margin-top: -30px;
+}
+.service-box i{
+    border: solid transparent 5px;
+    border-radius:500px;
+    height: 17vmin;
+    width: 17vmin;
+    padding: 10px;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    transition: all .5s;
+}
+.service-box img{
+    transition: all .5s;
+}
+.service-box:hover i{
+    
+    background-color: rgba( 0, 0, 0, .8 );
+    height: 22vmin;
+    width: 22vmin;
+}
+.service-box:hover img{
+    margin-top:15%!important;
+}
+
 .scene{
     position: absolute;
     top:0px;
@@ -237,7 +287,7 @@
 .socialTop {
     left: 34vw; 
     font-size: 70px;
-    top:40vh;
+    top:41vh;
    position: fixed;
     list-style: none;
     display: inline-block;
@@ -650,7 +700,7 @@ background-size: auto auto;
     transition: all .5s;
 }
 
-iframe {
+.mapiframe {
     width: 100%;
     border-radius: 20px;
     visibility: hidden;
