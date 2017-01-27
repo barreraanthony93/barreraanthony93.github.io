@@ -1,3 +1,34 @@
+<?php
+if (empty($_POST) === false){
+$errors = array();
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+};
+
+if (empty($name) === true || empty($email) === true) {
+    $errors[] = 'Name, email and message are required!';
+
+} else {
+    
+    if (filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+    $errors[] = 'Please enter a valid email address';
+    }
+    
+    if (ctype_alpha($email, FILTER_VALIDATE_EMAIL) === false){
+    $errors[] = 'Name must only contain letters!';
+    }
+}
+
+if (empty($errors) === true) {
+    mail('barreraanthony93@yahoo.com', 'Contact form', $message, 'From: ' . $email);
+    header('Location: thankyou.html?sent');
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -347,7 +378,7 @@
                                                                 <h2 class="whiteh2small">Nombre:</h2></label>
                                                         </div>
                                                         <div class=" col-xs-8 col-xs-offset-1">
-                                                            <input id="name" name="name" type="text" placeholder="Nombre" class="form-control">
+                                                             <input id="name" name="name" type="text" placeholder="Nombre" class="form-control" <?php if (isset($_POST['name']) === true) {echo 'value="',  strip_tags($_POST['name']), '"';} ?>>
                                                         </div>
                                                     </div>
 
@@ -358,7 +389,7 @@
                                                                 <h2 class="whiteh2small">E-mail:</h2></label>
                                                         </div>
                                                         <div class="col-xs-8 col-xs-offset-1">
-                                                            <input id="email" name="email" type="text" placeholder="E-mail" class="form-control">
+                                                            <input id="email" name="email" type="text" placeholder="E-mail" class="form-control" <?php if (isset($_POST['email']) === true) {echo 'value="',  strip_tags($_POST['email']), '"';} ?> >
                                                         </div>
                                                     </div>
 
@@ -369,7 +400,7 @@
                                                                 <h2 class="whiteh2small">Mensaje:</h2></label>
                                                         </div>
                                                         <div class="col-xs-8 col-xs-offset-1">
-                                                            <textarea class="form-control" id="message" name="message" placeholder="Mensaje para la Igleisa De Cristo en Elgin..." rows="5"></textarea>
+                                                             <textarea class="form-control" id="message" name="message" placeholder="Mensaje para la Igleisa De Cristo en Elgin..." rows="5" <?php if (isset($_POST['message']) === true) {echo strip_tags($_POST['message']);} ?>></textarea>
                                                         </div>
                                                     </div>
 

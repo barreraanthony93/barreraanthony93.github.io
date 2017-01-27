@@ -23,7 +23,7 @@ if (empty($name) === true || empty($email) === true) {
 
 if (empty($errors) === true) {
     mail('barreraanthony93@yahoo.com', 'Contact form', $message, 'From: ' . $email);
-    header('Location: contact.php?sent');
+    header('Location: thankyou.html?sent');
     exit();
 }
 ?>
@@ -67,15 +67,7 @@ if (empty($errors) === true) {
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-   <?php
-   if (empty($errors) === false) {
-        echo '<ul>';
-        foreach($errors as $error)   {
-            echo '<li>', $error, '</li>';
-        }
-         echo '</ul>';
-   }
-   ?>
+  
     <header class="CoverSlides" style="width:100%; position:fixed;">
         <div class="Overlay">
             <div class="textCover">
