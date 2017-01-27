@@ -85,7 +85,7 @@ var CoverLoader = new TimelineMax()
        brain = $(".headBrain");;
        
     var creci = new TimelineMax()
-    .from(brain, 1, {scale: 0, ease:Bounce.easeIn}, '-=.5')
+    .from(brain, 1, {scale: .5, ease:Bounce.easeIn}, '-=.5')
         .from(growh2, 1, {x:-1500})
         .from(growp, 1, {x:-1500}, '-=.5')
         .from(growbtn, 1, {x:1500}, '-=.5')
