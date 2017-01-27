@@ -1,33 +1,3 @@
-<?php
-if (empty($_POST) === false){
-$errors = array();
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-};
-
-if (empty($name) === true || empty($email) === true) {
-    $errors[] = 'Name, email and message are required!';
-
-} else {
-    
-    if (filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-    $errors[] = 'Please enter a valid email address';
-    }
-    
-    if (ctype_alpha($email, FILTER_VALIDATE_EMAIL) === false){
-    $errors[] = 'Name must only contain letters!';
-    }
-}
-
-if (empty($errors) === true) {
-    mail('barreraanthony93@yahoo.com', 'Contact form', $message, 'From: ' . $email);
-    header('Location: thankyoumobile.html?sent');
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,7 +101,7 @@ if (empty($errors) === true) {
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2 style="color:aquamarine; font-family:jaa;">Bienvenido!</h2>
-                <p style="font-size:4vw;">Gracias por visitar nuestra pagina. Esperamos que mientras usted esté aquí usted averiguará un poco sobre quién somos, lo que hacemos, y como involucrarse. El objetivo de la Iglesia de Crsito en Elgin es simple - queremos honrar y glorificar a Dios en todo lo que hacemos. Queremos permitir que la luz de Jesús brille por medio de nosotros cuando intentamos contar y vivir las Buenas Nuevas. Le invitamos a estudiar, aprender, y crecer junto con nosotros cuando procuramos glorificar a Dios en todas las cosas. ¡Dios siempre era, es, y sera bueno!</p>
+                <p style="font-size:4vw;">Gracias por visitar nuestra página. Esperamos que mientras esté aquí usted entienda un poco sobre quiénes somos, lo que hacemos y como involucrarse. El objetivo de la Iglesia de Cristo en Elgin es simple - queremos honrar y glorificar a Dios en todo lo que hacemos, así como dejar que la luz de Jesús brille a través de nosotros al vivir el evangelio. Le invitamos a estudiar, aprender y crecer junto con nosotros al glorificar a Dios en todas las cosas. ¡Dios siempre es Bueno!</p>
             </div>
         </div>
 
@@ -146,7 +116,7 @@ if (empty($errors) === true) {
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                        Aquellos de nosotros que componemos la familia de la Iglesia de Cristo hacemos todo lo posible para hacer más como el senor Jesús Cristo. Queremos reflejar Su luz a nuestra comunidad y el mundo. Somos cometidos a Su Palabra para que nos diriga en todo que hacemos incluso nuestra adoración, nuestras relaciones y como vivimos nuestras vidas cada día. Nuestro objetivo es vivir lo que creemos, la iglesia no se trata de nosotros, sino de Él.
+                        Aquellos de nosotros que componemos la familia de la Iglesia de Cristo hacemos todo lo posible para hacer más como el Se&ntilde;or Jesús Cristo. Queremos reflejar Su luz a nuestra comunidad y el mundo. Somos cometidos a Su Palabra para que nos diriga en todo que hacemos incluso nuestra adoración, nuestras relaciones y como vivimos nuestras vidas cada día. Nuestro objetivo es vivir lo que creemos, la iglesia no se trata de nosotros, sino de Él.
                     </div>
                 </div>
             </div>
@@ -209,6 +179,20 @@ if (empty($errors) === true) {
                         <br>
                         <br>
                         <a href="predicador-mobile.html" class="btn btn-default btn-sm" target="_blank">Conoce a Nuestro Predicador</a>
+                    </div>
+                </div>
+            </div>
+             <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFifth">
+                    <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifth" aria-expanded="false" aria-controls="collapseThree">
+         Educacion
+        </a>
+      </h4>
+                </div>
+                <div id="collapseFifth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifth">
+                    <div class="panel-body">
+                        La educación es de gran importancia en la Iglesia de Cristo en Elgin, Queremos saber lo que El quiere que sepamos en cuanto a Su Voluntad, sus caminos y pensamientos. ¡Así, procuramos saber Su Palabra! Venga y sea parte de las clases de todas las edades donde el Señor le ayudará a crecer y encaminarlo en un camino espiritual con Dios.
                     </div>
                 </div>
             </div>
@@ -363,7 +347,7 @@ if (empty($errors) === true) {
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
-         <form class="form-horizontal" role="form" action="index.php" method="post">
+         <form class="form-horizontal" role="form" action="https://formspree.io/idcelgin@gmail.com" method="post">
                                         <fieldset class="col-lg-12">
                                             <legend class="text-center">
                                                 <h3 class="white" style="font-family:jaa;">Visitanos Y Hablanos</h3></legend>
@@ -377,7 +361,7 @@ if (empty($errors) === true) {
                                                                 <h2 class="whiteh2small">Nombre:</h2></label>
                                                         </div>
                                                         <div class=" col-xs-8 col-xs-offset-1">
-                                                             <input id="name" name="name" type="text" placeholder="Nombre" class="form-control" <?php if (isset($_POST['name']) === true) {echo 'value="',  strip_tags($_POST['name']), '"';} ?>>
+                                                             <input id="name" name="name" type="text" placeholder="Nombre" class="form-control">
                                                         </div>
                                                     </div>
 
@@ -388,7 +372,7 @@ if (empty($errors) === true) {
                                                                 <h2 class="whiteh2small">E-mail:</h2></label>
                                                         </div>
                                                         <div class="col-xs-8 col-xs-offset-1">
-                                                            <input id="email" name="email" type="text" placeholder="E-mail" class="form-control" <?php if (isset($_POST['email']) === true) {echo 'value="',  strip_tags($_POST['email']), '"';} ?> >
+                                                            <input id="email" name="_replyto" type="text" placeholder="E-mail" class="form-control" >
                                                         </div>
                                                     </div>
 
@@ -399,14 +383,16 @@ if (empty($errors) === true) {
                                                                 <h2 class="whiteh2small">Mensaje:</h2></label>
                                                         </div>
                                                         <div class="col-xs-8 col-xs-offset-1">
-                                                             <textarea class="form-control" id="message" name="message" placeholder="Mensaje para la Igleisa De Cristo en Elgin..." rows="5" <?php if (isset($_POST['message']) === true) {echo strip_tags($_POST['message']);} ?>></textarea>
+                                                             <textarea class="form-control" id="message" name="message" placeholder="Mensaje para la Igleisa De Cristo en Elgin..." rows="5"></textarea>
                                                         </div>
                                                     </div>
 
                                                     <!-- Form actions -->
                                                     <div class="form-group">
                                                         <div class="col-xs-12 text-right">
+                                                           <input type="text" name="_gotcha" style="display:block" />
                                                             <button type="submit" class="btn-default btn-secondary btn-lg">Enviar</button>
+                                                            <input type="hidden" name="_next" value="/thankyoumobile.html" /thanks.>
                                                         </div>
                                                     </div>
                                                 </div>
