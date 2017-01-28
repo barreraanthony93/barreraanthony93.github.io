@@ -243,8 +243,6 @@ var CoverLoader = new TimelineMax()
             tl.restart();
         });
     
-    
-    
     ////SUB PAGES/////
     
     var 
@@ -259,10 +257,10 @@ var CoverLoader = new TimelineMax()
     var SubpageInto = new TimelineMax()
     
     .from(h1, 2, {x: 300, opacity: 0, delay:4})
-    .from(brandImg, 2, {opacity: 0, delay:2}, '-=1')
-    .from(menu, 2, {opacity: 0}, '-=2')
+    .from(brandImg, 1, {opacity: 0}, '-=1')
+    .from(menu, 1, {opacity: 0}, '-=1')
     .from(hsub, 2, {x: -300, opacity: 0},"-=3")
-    .from(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone, delay:1})
+    .from(socialTop, 1, {opacity:0, y:50, ease:Power0.easeNone})
     .fromTo(btn, 1, {y: 10, opacity: 0, ease:Power0.easeNone},{y:0, opacity:1},'-=3')
    
    
