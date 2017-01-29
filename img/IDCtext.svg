@@ -6,7 +6,7 @@
           <style>
                 @font-face {
     font-family: "Quantum";
-    src: url(font-awesome/fonts/Quantum.tff) format("truetype");
+    src: url(Quantum.tff) format("truetype");
 }             
               #Layer_1{
                   stroke-dasharray: 500;
