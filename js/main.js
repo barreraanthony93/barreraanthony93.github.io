@@ -49,7 +49,6 @@ var CoverLoader = new TimelineMax()
          reverse: false,
     })
         .setTween(servicesTl)
-        .addIndicators({name: "serv"})
         .addTo(controller);
     
 
@@ -72,7 +71,6 @@ var CoverLoader = new TimelineMax()
            
         })
         .setTween(header)
-        .addIndicators({name: "header"}) 
         .addTo(controller);
 
 
@@ -95,8 +93,7 @@ var CoverLoader = new TimelineMax()
             triggerElement: "#triggerCrecimiento",
             reverse: false,
         })
-        .setTween(creci)
-        .addIndicators({name: "conectate"}) 
+        .setTween(creci) 
         .addTo(controller);
 
 
@@ -115,7 +112,6 @@ var CoverLoader = new TimelineMax()
         reverse: false,
     })
     .setTween(teamScene)
-    .addIndicators({name:"team"})
     .addTo(controller);
 
 
@@ -284,7 +280,6 @@ var CoverLoader = new TimelineMax()
         
     })
         .setTween(featureIn)
-        .addIndicators({name: "featureIn"})
         .addTo(controller);
     
  
