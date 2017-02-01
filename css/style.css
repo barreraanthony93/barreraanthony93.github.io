@@ -128,6 +128,10 @@
 .service-box:hover img{
     margin-top:15%!important;
 }
+.service-box:hover #heart img{
+    margin-top:20%!important;
+    margin-left: -5%!important;
+}
 
 .scene{
     position: absolute;
@@ -202,7 +206,7 @@
 }
 #layerup{
     position: relative;
-    width: 300vmin;
+    width: 350vmin;
     height: 150vh;
     left: -20%;
     top:250px!important;
@@ -1013,6 +1017,25 @@ button {
     padding: 10px 10px;
    background-image: url(../img/audiobanners/banner-1248181_1920.jpg);
     background-position: 0px -100px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 10px;
+    
+}
+
+.AudioBack5 {
+    padding: 10px 10px;
+   background-image: url(../img/audiobanners/comoel.jpg);
+    background-position: 0px -350px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 10px;
+    
+}
+.AudioBack6 {
+    padding: 10px 10px;
+   background-image: url(../img/audiobanners/fin-del-mundo-o-apocalipsis.jpg);
+    background-position: 0px -150px;
     background-repeat: no-repeat;
     background-size: 100% auto;
     border-radius: 10px;

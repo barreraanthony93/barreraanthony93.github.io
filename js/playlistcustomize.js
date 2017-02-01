@@ -1,12 +1,13 @@
 $(document).ready(function() {
 
 	new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_2",
-		cssSelectorAncestor: "#jp_container_2"
+		jPlayer: "#jquery_jplayer_hebreo",
+		cssSelectorAncestor: "#jp_container_hebreo"
 	}, [
 		{
 			title:"El Mas Grande Mandamiento",
-			mp3:"OLD/AMARASADIOSJUDIO.mp3"
+			mp3:"OLD/AMARASADIOSJUDIO.mp3",
+             /*download:"documents/Amor.pdf"*/ // SAMPLE DOWNLOAD 
 		},
         {
 			title:"Amaras A Tu Prójimo",
@@ -21,29 +22,24 @@ $(document).ready(function() {
 			mp3:"OLD/EmunahAmen.mp3"
 		},
 		
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
     
     
     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_3",
-		cssSelectorAncestor: "#jp_container_3"
+		jPlayer: "#jquery_jplayer_corintios",
+		cssSelectorAncestor: "#jp_container_corintios"
 	}, [
 	
 		{
 			title:"Introducción",
-			mp3:"OLD/CORINTIOSUNO.mp3"
+			mp3:"OLD/CORINTIOSUNO.mp3",
 		},
         {
 			title:"Perfectamente Unidos",
-			mp3:"OLD/CORINTIOSDOS.mp3"
+			mp3:"OLD/CORINTIOSDOS.mp3",
+           
 		},
         {
 			title:"Sabiduría vs. Insensatez",
@@ -82,20 +78,14 @@ $(document).ready(function() {
 			mp3:"OLD/"
 		},*/
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
     
     
      new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_4",
-		cssSelectorAncestor: "#jp_container_4"
+		jPlayer: "#jquery_jplayer_TTI",
+		cssSelectorAncestor: "#jp_container_TTI"
 	}, [
 	
 		  {
@@ -180,23 +170,17 @@ $(document).ready(function() {
 		},*/
          
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3, m4a",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
     
      new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_5",
-		cssSelectorAncestor: "#jp_container_5"
+		jPlayer: "#jquery_jplayer_ministerioJesus",
+		cssSelectorAncestor: "#jp_container_ministerioJesus"
 	}, [
 	
 		{
-			title:"La Parábola de la mostaza y Levadura",
+			title:"La Parábola | mostaza y Levadura",
 			mp3:"OLD/ElGranodeMostaza.mp3"
 		},
          {
@@ -224,207 +208,79 @@ $(document).ready(function() {
 			mp3:"OLD/UnMudoyLaLabor.mp3"
 		},
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
      new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_6",
-		cssSelectorAncestor: "#jp_container_6"
+		jPlayer: "#jquery_jplayer_comoEl",
+		cssSelectorAncestor: "#jp_container_comoEl"
 	}, [
 	
 		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			title:"Viene Pronto!",
+			/*mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"*/
 		},
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_7",
-		cssSelectorAncestor: "#jp_container_7"
+     
+       new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_apocalipsis",
+		cssSelectorAncestor: "#jp_container_apocalipsis"
 	}, [
 	
 		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			title:"Viene Pronto!",
+			/*mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"*/
 		},
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_8",
-		cssSelectorAncestor: "#jp_container_8"
+       new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_apocalipsisII",
+		cssSelectorAncestor: "#jp_container_apocalipsisII"
 	}, [
 	
 		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			title:"Viene Pronto!",
+			/*mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"*/
 		},
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_9",
-		cssSelectorAncestor: "#jp_container_9"
+       new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_apocalipsisIII",
+		cssSelectorAncestor: "#jp_container_apocalipsisIII"
 	}, [
 	
 		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			title:"Viene Pronto!",
+			/*mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"*/
 		},
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_10",
-		cssSelectorAncestor: "#jp_container_10"
+       new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_apocalipsisMX",
+		cssSelectorAncestor: "#jp_container_apocalipsisMX"
 	}, [
 	
 		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			title:"Viene Pronto!",
+			/*mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"*/
 		},
 	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
+	],{
 		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
-	});
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_11",
-		cssSelectorAncestor: "#jp_container_11"
-	}, [
-	
-		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-		},
-	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
-	});
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_12",
-		cssSelectorAncestor: "#jp_container_12"
-	}, [
-	
-		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-		},
-	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
-	});
-    
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_13",
-		cssSelectorAncestor: "#jp_container_13"
-	}, [
-	
-		{
-			title:"Your Face",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-		},
-	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
-	});
-    
-     new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_himno",
-		cssSelectorAncestor: "#jp_container_himno"
-	}, [
-	
-		{
-			title:"himno",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
-            
-		},
-         {
-			title:"himno",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-		},
-         {
-			title:"himno",
-			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-		},
-	
-	], {
-		swfPath: "../../dist/jplayer",
-		supplied: "oga, mp3",
-		wmode: "window",
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true
 	});
     
 });

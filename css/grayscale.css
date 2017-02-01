@@ -1,10 +1,5 @@
 @media (min-width: 768px) and (max-width: 1124px) {
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-header .collapse, .navbar-toggle {
-        display:block !important;
-    }
+   
     .navbar-header {
         float:none;
     }
@@ -13,16 +8,21 @@
         top:-10px!important;
         position: relative;
     }
-  
+    .navbar-custom .navbar-toggle:focus,
+    .navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+    .navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+   
     .navbar ul {
         width: 100vw;
-        left:0px;
         position: absolute;
-        
+        left:0px;
     }
      .navbar li {
         width: 100vw;
-        left:0px;
         
     }
     label{
@@ -504,9 +504,14 @@ a:focus {
     text-align: center;
     width: 100%;
 }
-.navbar ul{
-    width: 100vw!important;
-}
+ .navbar ul {
+        width: 100vw;
+        left:0px;
+    }
+     .navbar li {
+        width: 100vw;
+        
+    }
 
 .navbar-custom .nav li a:hover {
   background-color: aquamarine;
@@ -526,16 +531,8 @@ a:focus {
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
-@media (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
-    border-bottom: none;
-    letter-spacing: 1px;
-    background: transparent;
-    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
+@media (min-width: 1124px) {
+
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: black;

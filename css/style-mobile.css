@@ -983,6 +983,24 @@ button {
     border-radius: 10px;
     
 }
+.AudioBack5 {
+    padding: 10px 10px;
+   background-image: url(../img/audiobanners/comoel.jpg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 10px;
+    
+}
+.AudioBack6 {
+    padding: 10px 10px;
+   background-image: url(../img/audiobanners/fin-del-mundo-o-apocalipsis.jpg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 150% auto;
+    border-radius: 10px;
+    
+}
 .AudioContain h3{
     font-size: 4em;
     margin: 0px;

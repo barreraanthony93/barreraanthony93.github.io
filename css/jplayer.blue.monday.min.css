@@ -11,6 +11,11 @@
 .jp-video button::-moz-focus-inner {
     border: 0
 }
+.jp-download {
+    float: right!important;
+    text-indent: 0px;
+    }
+
 
 .jp-audio,
 .jp-audio-stream,
@@ -36,10 +41,6 @@
     
 }
 
-.jp-audio-stream {
-    width: 182px
-}
-
 
 .jp-interface {
     position: relative;
@@ -62,13 +63,6 @@
 .jp-audio .jp-controls {
     width: 380px;
     padding: 5px 10px 0
-}
-
-.jp-audio-stream .jp-controls {
-    position: relative;
-    top: 20px;
-    left: 20px;
-    width: 142px
 }
 
 .jp-controls button {
@@ -621,6 +615,11 @@ span.jp-artist {
     display: none;
     height: 0px;
 }
+    .jp-download {
+    float: right!important;
+    text-indent: 0px;
+    }
+
 .audioPlayer.show {
     display: block;
      height: 0px;
@@ -758,6 +757,7 @@ span.jp-artist {
     height: 100%;
     cursor: pointer
 }
+
 
 .jp-play-bar {
     background: url(../image/bars.png) -20px -42px repeat-x;
@@ -922,6 +922,7 @@ span.jp-artist {
     font-weight: 700
 }
 
+
 .jp-playlist ul {
     list-style-type: none;
     margin: 0;
@@ -967,7 +968,7 @@ div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
 div.jp-type-playlist div.jp-playlist a {
     color: #fff;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 10px;
 }
 
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current,
