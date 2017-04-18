@@ -1,0 +1,63 @@
+<ion-header >
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src="assets/img/logofull.png" style="width: 15%;"></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="card-background-page" >
+  <ion-row >
+  <ion-col col-12="" col-sm-6="" col-md-6="" col-lg-3="" >
+    <div>
+      <ion-card (click)="openModal({charNum: 0})">
+        <img src="http://placehold.it/350x350"/>
+        <div class="card-title"> Bienvenido</div>
+      </ion-card>
+</div>
+</ion-col>
+<ion-col col-12="" col-sm-6="" col-md-6="" col-lg-3="">
+    <div>
+      <ion-card (click)="openModal({charNum: 1})">
+        <img src="http://placehold.it/350x350"/>
+        <div class="card-title">Acerca</div>
+      </ion-card>
+</div>
+</ion-col>
+<ion-col col-12="" col-sm-6="" col-md-6="" col-lg-3=""  >
+    <div>
+      <ion-card (click)="openModal({charNum: 2})">
+        <img src="http://placehold.it/350x350"/>
+        <div class="card-title">Educacion</div>
+      </ion-card>
+</div>
+</ion-col>
+<ion-col col-12="" col-sm-6="" col-md-6="" col-lg-3=""  >
+    <div>
+      <ion-card (click)="openModal({charNum: 3})">
+        <img src="http://placehold.it/350x350"/>
+        <div class="card-title">Ministerio</div>
+      </ion-card>
+   </div>
+</ion-col>
+
+ </ion-row>
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p color='primary' [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-right color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
