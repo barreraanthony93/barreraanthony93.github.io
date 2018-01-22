@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="10391.37 1705.485 78.36 58.263">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        filter: url(#Path_75);
+      }
+    </style>
+    <filter id="Path_75" x="10391.37" y="1705.485" width="78.36" height="58.263" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Path_75-2" data-name="Path 75" class="cls-1" d="M65.659,1.1,2.315,0A2.334,2.334,0,0,0,.662.662,2.456,2.456,0,0,0,0,2.26v43.5a2.212,2.212,0,0,0,2.205,2.205l63.454.3a2.205,2.205,0,0,0,0-4.41l-61.249-.3V6.891L32.967,26.076a.054.054,0,0,1,.055.055c.055.055.11.055.221.11.055,0,.055.055.11.055s.11.055.165.055.055,0,.11.055c.055,0,.11.055.165.055h.772a.2.2,0,0,0,.165-.055c.055,0,.055,0,.11-.055.055,0,.11-.055.165-.055s.055-.055.11-.055c.055-.055.11-.055.165-.11a.054.054,0,0,0,.055-.055L63.95,7.884l-.5,23.138a2.205,2.205,0,0,0,4.41,0l.5-27.163A2.753,2.753,0,0,0,65.659,1.1ZM34.235,21.611,8.821,4.521,59.705,5.4Z" transform="translate(10392.87 1706.99)"/>
+  </g>
+</svg>
