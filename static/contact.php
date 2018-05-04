@@ -8,7 +8,7 @@ require 'vendor/autoload.php';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$message = $_POST['message']
+$message = $_POST['message'];
 
 // Instantiate a new PHPMailer 
 $mail = new PHPMailer;
