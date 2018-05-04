@@ -6,6 +6,10 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message']
+
 // Instantiate a new PHPMailer 
 $mail = new PHPMailer;
 
@@ -14,13 +18,14 @@ $mail->isSMTP();
 
 // Replace sender@example.com with your "From" address. 
 // This address must be verified with Amazon SES.
-$mail->setFrom('idcelgin@gmail.com', 'Church website');
+$mail->setFrom('idcelgin@gmail.com', 'Church Website');
 
 // Replace recipient@example.com with a "To" address. If your account 
 // is still in the sandbox, this address must be verified.
 // Also note that you can include several addAddress() lines to send
 // email to multiple recipients.
-$mail->addAddress('barreraanthony93@yahoo.com', 'Anthony Barrera');
+$mail->addAddress('idcelgin@gmail.com', 'New Email from Website');
+$mail->addAddress('catch13777@aol.com', 'Ricardo Barrera');
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $mail->Username = 'AKIAIWAE27BUH4WO72HA';
@@ -38,14 +43,10 @@ $mail->Password = 'AjlpXtGR9MnmxPw02bKO3QRukbuFwz6Sl4Ha7O1wD8Pa';
 $mail->Host = 'email-smtp.us-east-1.amazonaws.com';
 
 // The subject line of the email
-$mail->Subject = 'Message from blank';
+$mail->Subject = 'New email from' $name;
 
 // The HTML-formatted body of the email
-$mail->Body = '<h1>Email Test</h1>
-    <p>This email was sent through the 
-    <a href="https://aws.amazon.com/ses">Amazon SES</a> SMTP
-    interface using the <a href="https://github.com/PHPMailer/PHPMailer">
-    PHPMailer</a> class.</p>';
+$mail->Body = '<h1>from: '.$email.'</h1><p>'.$message.'</p>';
 
 // Tells PHPMailer to use SMTP authentication
 $mail->SMTPAuth = true;
