@@ -43,7 +43,7 @@ $mail->Password = 'AjlpXtGR9MnmxPw02bKO3QRukbuFwz6Sl4Ha7O1wD8Pa';
 $mail->Host = 'email-smtp.us-east-1.amazonaws.com';
 
 // The subject line of the email
-$mail->Subject = 'New email from' $name;
+$mail->Subject = 'New email from'.$name;
 
 // The HTML-formatted body of the email
 $mail->Body = '<h1>from: '.$email.'</h1><p>'.$message.'</p>';
