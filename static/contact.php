@@ -26,7 +26,7 @@ $mail->setFrom('idcelgin@gmail.com', 'Church Website');
 // email to multiple recipients.
 $mail->addAddress('idcelgin@gmail.com', 'IDCELGIN');
 // $mail->addAddress('catch13777@aol.com', 'Ricardo Barrera');
-$mail->addAddress('barreraanthony93', 'Anthony Barrera');
+$mail->addAddress('barreraanthony93@yahoo.com', 'Anthony Barrera');
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $mail->Username = 'AKIAIWAE27BUH4WO72HA';
