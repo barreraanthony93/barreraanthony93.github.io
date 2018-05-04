@@ -6,10 +6,6 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message']
-
 // Instantiate a new PHPMailer 
 $mail = new PHPMailer;
 
@@ -42,10 +38,14 @@ $mail->Password = 'AjlpXtGR9MnmxPw02bKO3QRukbuFwz6Sl4Ha7O1wD8Pa';
 $mail->Host = 'email-smtp.us-east-1.amazonaws.com';
 
 // The subject line of the email
-$mail->Subject = 'New email from' $name;
+$mail->Subject = 'Message from blank';
 
 // The HTML-formatted body of the email
-$mail->Body = '<h1>from: '.$email.'</h1><p>'.$message.'</p>';
+$mail->Body = '<h1>Email Test</h1>
+    <p>This email was sent through the 
+    <a href="https://aws.amazon.com/ses">Amazon SES</a> SMTP
+    interface using the <a href="https://github.com/PHPMailer/PHPMailer">
+    PHPMailer</a> class.</p>';
 
 // Tells PHPMailer to use SMTP authentication
 $mail->SMTPAuth = true;
@@ -67,6 +67,5 @@ if(!$mail->send()) {
     echo "Email not sent. " , $mail->ErrorInfo , PHP_EOL;
 } else {
     echo "Email sent!" , PHP_EOL;
-    print "email sent from $email";
 }
 ?>
