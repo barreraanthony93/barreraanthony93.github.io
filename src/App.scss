@@ -1,0 +1,160 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-width: 1200px;
+    width: 100vw;
+    height: 80vh;
+    padding: 3em;
+}
+
+.block {
+    background-color: #36454C;
+    border-radius: 20px;
+    height: 315px;
+
+}
+
+.div1 {
+    grid-column: auto / span 2; 
+}
+
+.div2 {
+    grid-column: auto / span 1; 
+}
+
+.div3 {
+    grid-column: auto / span 1; 
+}
+
+.div4 {
+    grid-column: auto / span 1; 
+ 
+} 
+.div5 {
+    grid-column: auto / span 1;  
+}
+
+.div6 {
+    grid-column: auto / span 2; 
+
+}
+
+.div7 {
+    grid-column: auto / span 1; 
+
+}
+
+.div8 {
+    grid-column: auto / span 3; 
+
+}
+ 
+ 
+
+@media (min-width: 810px) and (max-width: 1199px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        max-width: 1200px;
+        width: 100vw;
+        height: 80vh;
+        padding: 3em;
+    }
+    .div1 {
+        grid-column: auto / span 2; 
+    }
+    
+    .div2 {
+        grid-column: auto / span 1; 
+    }
+    
+    .div3 {
+        grid-column: auto / span 1; 
+    }
+    
+    .div4 {
+        grid-column: auto / span 1; 
+     
+    } 
+    .div5 {
+        grid-column: auto / span 1;  
+    }
+    
+    .div6 {
+        grid-column: auto / span 3; 
+    
+    }
+    
+    .div7 {
+        grid-column: auto / span 3; 
+    
+    }
+    
+    .div8 {
+        grid-column: auto / span 3; 
+    
+    }
+}
+
+@media (max-width: 809px) {
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-width: 1200px;
+    width: 100vw;
+    height: 80vh;
+    padding: 3em;
+} 
+    .div1 {
+        grid-column: auto / span 1; 
+    }
+    
+    .div2 {
+        grid-column: auto / span 1; 
+    }
+    
+    .div3 {
+        grid-column: auto / span 1; 
+    }
+    
+    .div4 {
+        grid-column: auto / span 1; 
+     
+    } 
+    .div5 {
+        grid-column: auto / span 1;  
+    }
+    
+    .div6 {
+        grid-column: auto / span 1; 
+    
+    }
+    
+    .div7 {
+        grid-column: auto / span 1; 
+    
+    }
+    
+    .div8 {
+        grid-column: auto / span 1; 
+    
+    }
+}
+
+ 
