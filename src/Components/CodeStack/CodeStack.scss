@@ -1,0 +1,11 @@
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 1em 0 ;
+    width: 80px;
+    svg {
+        color: white;
+        padding: 0 2px;
+    }
+}

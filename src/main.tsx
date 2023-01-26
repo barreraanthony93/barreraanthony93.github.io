@@ -1,37 +1,80 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
-import About from './About'
+import './index.scss'
+import About from './About/About'
 import {
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter,
+  Route,
+  Routes,
 } from "react-router-dom";
 import Projects from './Projects'
 import Resume from './Resume'
+import Nav from './Components/Nav/Nav'
+import AppProvider from './Context/AppContext'
+import Footer from './Components/Footer/Footer'
+import ProjectPage from './ProjectPage/ProjectPage'
+import Contact from './Contact/Contact'
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
   {
     path: "/about",
-    element: <About/>,
+    element: <About />,
   },
   {
     path: "/projects",
-    element: <Projects/>,
+    element: <Projects />,
+    nested: [
+      {
+        path: "/gsm",
+        element: <ProjectPage />
+      },
+      {
+        path: "/besttreeserviceandlandscaping",
+        element: <ProjectPage />
+      }
+    ]
   },
   {
-    path: "/Resume",
-    element: <Resume/>,
+    path: "/resume",
+    element: <Resume />,
   },
-]);
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+];
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode> 
-    <RouterProvider router={router} />
+  <React.StrictMode>
+    <AppProvider>
+      <BrowserRouter>
+      <div className='layout'>
+        <div className='container'>
+        <Nav />
+        <Routes>
+          {routes.map((route) => (
+            <Route key={route.path} {...route}>
+              {route.nested ?
+                route.nested.map((nest) => (
+                  <Route key={nest.path} path={route.path + nest.path} element={nest.element} />
+                )):
+                null
+              }
+            </Route>
+          ))}
+          <Route />
+        </Routes>
+        <Footer />
+        </div>
+      </div>
+
+      </BrowserRouter>
+    </AppProvider>
   </React.StrictMode>,
 )

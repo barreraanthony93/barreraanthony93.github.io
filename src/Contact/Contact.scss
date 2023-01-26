@@ -1,0 +1,76 @@
+@import "../theme/colors.scss";
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  padding: 1.5em 0;
+
+  .info {
+    width: 400px;
+    padding: 4em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
+      padding: 1em 0;
+    }
+
+    p {
+      padding: 0.2em 0;
+      width: 90%;
+      font-weight: 500;
+    }
+
+    .info__bottom {
+        p:nth-child(1){
+            font-weight: 300;
+        }
+        p:nth-child(2){
+            font-size: 1.2em; 
+        }
+    }
+  }
+  .form {
+    padding: 2em;
+    background-color: $primary;
+    border-radius: 15px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      background-color: $background;
+      border: none;
+      height: 3.2em;
+      margin: 1em 0;
+      border-radius: 8px;
+      padding: 0 1em;
+      color: white;
+      transition: all ease-in-out .2s;
+    }
+    input:focus, textarea:focus {
+        border: none; 
+        outline: none;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); 
+    }
+    textarea {
+      height: 200px;
+      padding: 1em; 
+    }
+    button {
+    cursor: pointer;
+    
+      background: white;
+      padding: 1em 0;
+      margin: 1em 0;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+  }
+}
