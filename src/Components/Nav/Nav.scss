@@ -1,10 +1,15 @@
 @import '../../theme/colors.scss';
 
 nav {
-    display: flex;
+    display: flex;   
+    position: fixed;
     justify-content: space-evenly;
     align-items: center;
     padding: 3em 0 2em;
+    background-color: $background;
+    z-index: 9999;
+    width: 100%;
+    left: 0px;
     ul {
         display: flex;
         width: 400px;

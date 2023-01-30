@@ -1,0 +1,196 @@
+@import '../theme/colors.scss';
+
+.resume-page {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    color: white;
+    align-items: flex-start;
+
+    .contact-pane {
+        position: relative;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 140px;
+        max-width: 400px;
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin: 0 1em 1em 0;
+
+            h1 {
+                font-size: 2em;
+                width: 250px;
+            }
+
+            button {
+                background-color: white;
+                border-radius: 100px;
+                padding: .5em 1em;
+            }
+        }
+    }
+
+    .resume-pane {
+        padding: 0 1em;
+        color: white;
+
+        section {
+            margin: 1em 0;
+
+            .resume__description { 
+                color: white;
+                padding: .9em 0;
+                font-size: 1.3em; 
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                .resume__heading {
+                    background-color: $accent;
+                    padding: .2em;
+                    margin: 1em 0 0;
+                    color: black;  
+    
+                } 
+                .resume__title {    
+                    font-size: 1.3em;
+                    font-weight: 600;
+                }
+                .resume__timeline {
+                    color: $sub-text;
+                    font-style: italic;
+                    padding: .6em 0 .2em;
+                }
+              
+                p {
+                    padding: .9em 0;
+                    font-size: 1.3em; 
+    
+                }
+                .resume__tasks {
+                    padding: 0 1em;
+                    list-style-type: circle;
+
+                    li {
+                        padding: .4em;
+                        color: $sub-text
+
+                    }
+                    // li:before {
+                    //     content: '-';
+                    //     padding: 0 1em;
+                    // }
+                }
+
+            }
+
+            .resume__skills {
+                display: flex;
+                flex-wrap: wrap;  
+                .resume__skill {
+                    width: 260px; 
+                    padding: 0;
+                    margin: 0; 
+                    padding: 1em 1em 0 0em;
+                    font-size: 1.2em;
+                    color:$accent
+                    
+                }
+            }
+
+            .section__heading {
+                font-weight: 600;
+                font-size: 2em;
+            }
+ 
+         
+        }
+    }
+}
+
+
+@media (min-width: 810px) and (max-width: 1199px) {  
+}
+
+@media (max-width: 809px) { 
+    .resume-page {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column; 
+        
+    }    
+    .contact-pane {
+        position: relative!important; 
+        top: 0px!important;
+        max-width: 400px;
+    }
+
+    .resume-pane {
+        padding: 0 1em;
+        color: white;
+
+        section {
+            margin: 1em 0;
+            .content {
+                display: flex;
+                flex-direction: row;
+                padding: 1em 0;
+                .flex {
+                    flex-direction: column!important;
+                    align-items: flex-start;
+                }
+                .resume__title {
+                    padding: .5em 0;
+                }
+                
+                .resume__timeline {
+                    color: $sub-text;
+                    font-style: italic;
+                }
+                .resume__description {
+                    font-size: 1em!important;
+                    color: white;
+                    padding: .5em 0!important;
+                }
+                ul {
+                    padding: 0 1em;
+                    list-style-type: circle;
+
+                    li {
+                        padding: .4em;
+                        color: $sub-text
+
+                    } 
+                }
+
+            }
+
+            .section__heading {
+                font-weight: 600;
+                font-size: 2em;
+            }
+
+            p {
+                padding: .9em 0;
+                font-size: 1.3em;
+                color: $sub-text;
+
+            }
+
+            .resume__title {
+                color: rgb(228, 245, 116);
+                padding: 1em 0;
+                font-size: 1.3em;
+                font-weight: 600;
+            }
+        }
+    }
+ }

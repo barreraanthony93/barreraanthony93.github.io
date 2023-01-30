@@ -1,181 +1,183 @@
 @import "./theme/colors.scss";
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  height: 100%;
-}
-
-
-
-.welcome {
-  grid-column: auto / span 2;
-  display: flex;
-  justify-content: space-between;
-  .welcome__info {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .welcome__text {
-      color: white;
-      height: 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      h1 {
-        font-size: 2em;
-        font-weight: 500;
-      }
-      p {
-        font-size: 1em;
-        font-weight: 300;
-      }
-    }
-  }
-}
-
-.resume {
-  grid-column: auto / span 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  .resume__text {
-    color: white;
-    h1 {
-      font-size: 1.6em;
-      font-weight: 500;
-    }
-    p {
-      font-size: 0.7em;
-      font-weight: 100;
-      margin-top: 10px;
-    }
-  }
-}
-
-.double {
-  grid-column: auto / span 2 !important;
-}
-.triple {
-  grid-column: auto / span 3 !important;
-}
-
-.project {
-  grid-column: auto / span 1;
-  display: flex;
-  flex-direction: column;
-  button {
-    display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
     height: 100%;
-  }
-  .project__text__above {
+}  
+.welcome {
+    grid-column: auto / span 2;
     display: flex;
-    color: white;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    text-align: right;
+    justify-content: space-between;
 
-    h1 {
-      font-size: 1.6em;
-      font-weight: 500;
-      width: 70%;
-      float: right;
+    .welcome__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .welcome__text {
+            color: white;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h1 {
+                font-size: 2em;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 1em;
+                font-weight: 300;
+            }
+        }
     }
-    p {
-      font-size: 0.7em;
-      font-weight: 100;
-      padding-bottom: 7px;
+} 
+.resume {
+    grid-column: auto / span 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .resume__text {
+        color: white;
+
+        h1 {
+            font-size: 1.6em;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 0.7em;
+            font-weight: 100;
+            margin-top: 10px;
+        }
     }
-  }
+}
+
+
+// .project:hover {
+//     .project__image {
+//         width: 100px;
+//         height: auto;
+//         position: absolute;
+//         transform: translate(20px, 80px) rotate(-10deg); 
+//         transition: transform .4s cubic-bezier(1,.15,.38,.8); 
+//     }
+// }
+
+ 
+.project {
+    grid-column: auto / span 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    button {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+    }
+    .project__image {
+        width: 100px;
+        height: auto;
+        position: absolute; 
+        // transform: translate(20px, 280px) rotate(0deg);
+        // transition: transform .4s cubic-bezier(1,.15,.38,.8);
+    }
+  
+    .project__text__above {
+        display: flex;
+        color: white;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: right;
+
+        h1 {
+            font-size: 1.6em;
+            font-weight: 500;
+            width: 70%;
+            float: right;
+        }
+
+        p {
+            font-size: 0.7em;
+            font-weight: 100;
+            padding-bottom: 7px;
+        }
+    }
 }
 
 .linkedin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
-  svg {
-    color: white;
-  }
-  button {
-    position: absolute;
-    right: 1.5em;
-  }
+    svg {
+        color: white;
+    }
+
+    button {
+        position: absolute;
+        right: 1.5em;
+    }
 }
 
 .contact {
-  display: flex;
-  position: relative;
-  button {
-    position: absolute;
-    right: 1.5em;
-    bottom: 2em;
-  }
-  .contact__text {
-    color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 1em;
-    h1 {
-      padding: 0.1em 0;
-      font-size: 3em;
-      font-weight: 600;
+    position: relative;
+
+    button {
+        position: absolute;
+        right: 1.5em;
+        bottom: 2em;
     }
-  }
+
+    .contact__text {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 1em;
+
+        h1 {
+            padding: 0.1em 0;
+            font-size: clamp(2em, 2.5em, 3em );
+            font-weight: 600;
+        }
+    }
 }
 
-@media (min-width: 810px) and (max-width: 1199px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    max-width: 1200px;
-    width: 100vw;
-    height: 80vh;
-    padding: 3em;
-  }
-  .welcome {
-    grid-column: auto / span 2;
-  }
+@media (min-width: 810px) and (max-width: 1199px) { 
+    .welcome {
+        grid-column: auto / span 2;
+    }
 
-  .resume {
-    grid-column: auto / span 1;
-  }
+    .resume {
+        grid-column: auto / span 1;
+    }
 
-  .project {
-    grid-column: auto / span 1;
-  }
+    .project {
+        grid-column: auto / span 1;
+    }
 }
 
-@media (max-width: 809px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    max-width: 1200px;
-    width: 100vw;
-    height: 80vh;
-    padding: 3em;
-  }
-  .welcome {
-    grid-column: auto / span 1;
-  }
+@media (max-width: 809px) { 
+    .welcome {
+        grid-column: auto / span 1;
+    }
 
-  .resume {
-    grid-column: auto / span 1;
-  }
+    .resume {
+        grid-column: auto / span 1;
+    }
 
-  .project {
-    grid-column: auto / span 1 !important;
-  }
+    .project {
+        grid-column: auto / span 1 !important;
+    }
 }

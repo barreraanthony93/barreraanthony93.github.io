@@ -8,8 +8,8 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Projects from './Projects'
-import Resume from './Resume'
+import Projects from './Projects/Projects'
+import Resume from './Resume/Resume'
 import Nav from './Components/Nav/Nav'
 import AppProvider from './Context/AppContext'
 import Footer from './Components/Footer/Footer'
@@ -57,6 +57,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <div className='layout'>
         <div className='container'>
         <Nav />
+        <div style={{marginTop: 140}}> 
         <Routes>
           {routes.map((route) => (
             <Route key={route.path} {...route}>
@@ -69,8 +70,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             </Route>
           ))}
           <Route />
+
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
+        </div>
         </div>
       </div>
 

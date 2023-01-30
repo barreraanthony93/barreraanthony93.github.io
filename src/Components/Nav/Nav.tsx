@@ -6,7 +6,7 @@ const Nav:React.FC = () => {
   return (
     <nav>
       <div>
-        <img src='./src/assets/AB.svg'/>
+        <img src='/images/AB.svg'/>
       </div>
       <ul>
         <Link to="/">Home</Link>
