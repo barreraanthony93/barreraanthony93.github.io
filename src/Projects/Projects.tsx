@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react' 
 import Block from '../Blocks/Block'
 import './Projects.scss'
 
-const Projects: React.FC = () => {
+const Projects: React.FC = () => {  
   return (
     <div className='page'>
       <h1 className='page-heading'>Projects</h1>

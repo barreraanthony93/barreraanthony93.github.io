@@ -78,6 +78,7 @@ const Resume: React.FC = () => {
         <section>
           <h1 className='section__heading'>Skills</h1>
           <ul className='resume__skills'>
+            <li className='resume__skill'>Javascript</li>
             <li className='resume__skill'>REST API</li>
             <li className='resume__skill'>AJAX</li>
             <li className='resume__skill'>Node, Express</li>
@@ -88,14 +89,14 @@ const Resume: React.FC = () => {
             <li className='resume__skill'>Expo</li>
             <li className='resume__skill'>HTML</li>
             <li className='resume__skill'>CSS</li>
-            <li className='resume__skill'>Photoshope</li>
+            <li className='resume__skill'>Photoshop</li>
             <li className='resume__skill'>Illustrator</li>
             <li className='resume__skill'>XD</li>
             <li className='resume__skill'>Figma</li>
             <li className='resume__skill'>Prototyping</li>
           </ul>
         </section>
-        <section>
+        {/* <section>
           <h1 className='section__heading'>Interests</h1>
           <ul>
             <li></li>
@@ -105,7 +106,7 @@ const Resume: React.FC = () => {
             <li></li>
             <li></li>
           </ul>
-        </section>
+        </section> */}
       </div>
     </div>
   )

@@ -121,16 +121,25 @@
 }
 
 @media (max-width: 809px) { 
-    .resume-page {
-        max-width: 1200px;
+    .resume-page { 
         display: flex;
         flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         
     }    
-    .contact-pane {
+    .contact-pane { 
         position: relative!important; 
-        top: 0px!important;
-        max-width: 400px;
+        justify-content: center;
+        align-items: stretch;
+        display: flex;
+        flex-direction: column; 
+        top: 0px!important;  
+        .block { 
+        }
+
+        
     }
 
     .resume-pane {
@@ -171,6 +180,14 @@
                     } 
                 }
 
+            }
+
+            .resume__skills { 
+                .resume__skill {
+                    width: 150px!important;   
+                    font-size: 1em!important; 
+                    
+                }
             }
 
             .section__heading {
