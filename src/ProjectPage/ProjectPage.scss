@@ -1,0 +1,41 @@
+.project-page {
+    color: white;
+    div {
+        position: relative;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    a {
+        font-size: 2em;
+        padding-right: 1em;
+        color: white;
+    }
+    h1 , h2, p {
+        padding: .5em 0;
+    }
+    .images {
+        width: fit-content;
+        img {
+            margin: 3em 0;
+        }
+        .img-2{
+            position: absolute; 
+            left: 3em;
+            transition: all ease-in-out .2s;
+        }
+    }
+    .images:hover {
+        .img-2 {
+            left: 20em;
+        }
+    }
+    video {
+        margin: 3em 0;
+        border: solid white 8px;
+        border-radius: 20px;
+    }
+}
