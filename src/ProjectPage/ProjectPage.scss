@@ -1,10 +1,12 @@
+@import '../theme/colors.scss';
+
 .project-page {
     color: white;
     div {
         position: relative;
     }
     h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
     h2 {
         font-size: 1.5em;
@@ -14,13 +16,54 @@
         padding-right: 1em;
         color: white;
     }
+    .project__name {
+        font-size: 2em; 
+        color: white; 
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .project__title {
+        font-weight: 600;
+        font-size: 5em; 
+        
+    }
+    .project__links {
+        padding: 1em 0 ;
+    }
+    .project__brief {
+        font-size: 3em;
+    }
     h1 , h2, p {
-        padding: .5em 0;
+        padding: .2em 0;
     }
     .images {
-        width: fit-content;
-        img {
-            margin: 3em 0;
+        width: fit-content; 
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        .iphone {
+            position: relative;
+             position: relative;
+            margin: 3em 0; 
+            border-radius: 30px;
+            border: 7px solid white;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .iphone::before {
+            content: "adsfasdf"; 
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            height: 25px;
+            width: 120px;
+            background-color: white;
         }
         .img-2{
             position: absolute; 

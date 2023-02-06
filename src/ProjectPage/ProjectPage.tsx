@@ -8,6 +8,7 @@ type Props = {};
 type Work = {
     name: string,
     description: string,
+    title: string,
     links: string[],
     assets: string[],
     brief: string
@@ -15,10 +16,11 @@ type Work = {
 const projects = [
     {
         name: "idce",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum illo at eum alias voluptatem velit eligendi hic sit rem magnam?",
-        links: ["live site", "github"],
-        assets: ["/images/idce.mov", "/images/idce-mobile-1.png" ,"/images/idce-mobile-2.png"],
-        brief: "message about project"
+        title: "Iglesia de Cristo en Elgin",
+        description: "Modern and simplistic landing page for a church in Elgin, IL with smooth transitions and animations.",
+        links: ["https://iglesiadecristoenelgin.com", "github"],
+        assets: ["/images/idce/idce.mov", "/images/idce/idce-mobile-2.png", "/images/idce/idce-mobile-1.png", "/images/idce/idce-mobile-3.png"],
+        brief: "Mobile responsive site with important information for any visitor to leave with the core teachings and information they need from the Church and the Gospel."
     }
 ]
 
@@ -29,31 +31,31 @@ const ProjectPage = (props: Props) => {
     useEffect(() => {
         const filtered = projects.filter((p) => p.name === project)[0]
         setWork(filtered)
-    }, [project])
-
-    // const filterProject = useCallback(() => {
-    //     return projects.filter((p) => p.name === project)[0]
-    // }, [project])
-
-    // const { name, description, links, images, brief } = filterProject()
-
+    }, [project]) 
 
     return (
         work && <div className="project-page">
-            <h2>{work.name}</h2>
+            <span className="project__name">{work.name}</span>
+            <h1 className="project__title">{work.title}</h1>
             <h1>{work.description}</h1>
-            <div className="flex row">
-                <a href={work.links[0]}> <CgWebsite /></a>
-                <a href={work.links[1]}> < ImGithub /></a>
-            </div>
-            {/* <img src={work.images} width="100%"/> */}
+            <div className="flex row project__links">
+                <a href={work.links[0]} target="_blank"> <CgWebsite /></a>
+                <a href={work.links[1]} target="_blank"> < ImGithub /></a>
+            </div> 
             <video autoPlay muted width="100%" loop>
-                <source src={work.assets[0]} type="video/mp4"/>
+                <source src={work.assets[0]} type="video/mp4" />
             </video>
-            <p>{work.brief}</p>
+            <p className="project__brief">{work.brief}</p>
             <div className="images">
-                <img className="iphone" src={work.assets[1]}/>
-                <img className="iphone img-2" src={work.assets[2]}/>
+                <div className="iphone">
+                    <img src={work.assets[1]} />
+                </div>
+                <div className="iphone">
+                    <img src={work.assets[2]} />
+                </div>
+                <div className="iphone">
+                    <img src={work.assets[3]} />
+                </div>
             </div>
         </div>)
 };
